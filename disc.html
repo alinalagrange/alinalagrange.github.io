@@ -1,136 +1,463 @@
-<?php
-?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-				<link rel="shortcut icon" type="image/x-icon" href="      http://proj.tt1008.top/ZY.png"   >  
-					<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-						<title>  Human verification       </title>
-						<style>
-							*{
-							padding: 0px;
-							margin: 0px;
-							}
-							body{
-							width: 100%;
-							height: 100vh;
-							}
-							.main{
-							position: relative;
-							width: 100%;
-							height: 100%;
-							background: #000;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							}
-							.circle{
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							width: 200px;
-							height: 200px;
-							background-image: linear-gradient(0deg,
-							rgb(47,102,255),
-							rgb(153,64,255) 30%,
-							rgb(238,55,255) 60%,
-							rgb(255,0,76) 100%);
-							border-radius: 50%;
-							animation: rotate 1s linear infinite;
-							}
-							/* 模糊 */
-							.circle::before{
-							content: "";
-							position:absolute;
-							width: 200px;
-							height: 200px;
-							background-image: linear-gradient(0deg,
-							rgb(47,102,255),
-							rgb(77,64,255) 30%,
-							rgb(111,55,255) 60%,
-							rgb(255,0,111) 100%);
-							border-radius: 50%;
-							filter: blur(35px);
-							}
-							/* 黑圆 */
-							.circle::after{
-							content: "";
-							position:absolute;
-							width: 150px;
-							height: 150px;
-							background:#000;
-							border-radius: 50%;
-							}
-							h1{
-							position: absolute;
-							color: #fff;
-							font-weight: bold;
-							}
-							.title{
-							color: #FFFFFF;
-							position:absolute;
-							top:10%;
-							text-shadow:0px 0 60px #fff;
-							text-align: center;
-							font-size: 2rem;
-							font-weight: bold;
-							}
-							.text{
-							color: #FFFFFF;
-							position:absolute;
-							bottom:10%;
-							text-shadow:0px 0 60px #fff;
-							font-weight: bold;text-align: center;
-							}
-							/* 添加动画 */
-							@keyframes rotate{
-							0%{
-							transform: rotate(0deg);
-							}
-							100%{
-							transform: rotate(360deg);
-							}
-							}
-						</style>
-					</head>
-					<body onload="time()">
-						<div class="main">
-							<a href="  https://proj.tt1008.top/disc.html     " >   <div class="circle"></div></a>         
-							
-							<h1 id="second">	<a href="  https://proj.tt1008.top/disc.html    " >   30s</a></h1>      
-							<p class="title">      [点移动的蓝光晕圆环来验证您是人类而不是程序]          </p>
-							<p class="text">       正在验证，请在30秒内完成点击                              </p>
-						</div>
-					</body>
-					<script>
-						function cs(){
-						var query = window.location.search.substring(1);
-						var vars = query.split("&");
-						for (var i=0;i<vars.length;i++) {
-							var pair = vars[i].split("=");
-							if(pair[0] == "url"){
-							return pair[1];
-							}
-							}
-							return("  http://proj.tt1008.top/disc.html           ");//无指定跳转地址，将跳转此网页地址。
-							}
-							function time(){
-							var sec = document.getElementById("second");
-							var i = 30;//设置定时时间
-							var timer = setInterval(function(){
-							i--;
-							sec.innerHTML = i+"s";
-							if(i==1){
-							window.location.href = cs();
-							}
-							},1000);
-							
-							function goBack(){ 
-							window.history.go(-1);
-							} 
-							}
-							</script>
-						</html>
-   
+
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<link rel="shortcut icon" type="image/x-icon" href="      ZY2.png">  
+			<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge">
+					<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+ 
+							<title>   Alina Lagrange Disk       </title>
+							<meta name="description" content="   ">
+								<meta name="keywords" content="   "><link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">
+										<link rel="stylesheet" type="text/css" href="css/h.9c69ed6c.css">
+											<link rel="stylesheet" type="text/css" href="css/nekotora.99cf6f8c.css">
+ 
+												<script>function a(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],a("js",new Date),a("config","UA-137340638-1");</script>
+												   <script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>  
+ 
+											</head>  
+											
+											
+											<body> 
+												<nav> 
+													<a href="/" class="active"> </a> <a class="clip"></a>       
+												</nav>  
+												<body onContextMenu="alert('    Hi  ,if you do not know what you are doing,please don't   click  the  mouse      O(∩_∩)O     ————Alina Lagrange   '); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+													<body data-phone-cc-input="1">
+														<body><link href="css/toastr.css" rel="stylesheet">
+																<link href="css/style.css" rel="stylesheet">
+																	<link href="css/toastr.min.css" rel="stylesheet">
+																		<script src="js/toastr.min.js"></script>
+																		<style>
+																			.toast-bottom-center {
+																			position: absolute;
+																			left: 30px;
+																			right:10px;
+																			top: 20px;
+																			}
+																		</style>    
+																		<div class="background"> 
+																			<canvas id="startrack"></canvas> 
+																			<div class="cover"></div> </div>
+																		<div class="main"> <div class="ch intro">
+																				<div class="container"> <div class="hello">
+																						<h1>  \(   \mathcal Alina \                     \mathcal Lagrange's    \)</h1> <h1>       <B> \(
+																								\mathrm {Cloud  \      Disc   }\)</B>
+																						</h1> 
+																						
+																						<h3>   &nbsp       &nbsp                 </h3> 
+																						<h2> <div class="circle">&nbsp&nbsp&nbsp   
+																								&nbsp   
+																								<span>        &nbsp  &nbsp    </span> <span>&nbsp  &nbsp  </span> 
+																								<span>&nbsp  &nbsp  </span>	   <span>        &nbsp   &nbsp   </span>    <span>          &nbsp           &nbsp    </span>             <span>        &nbsp   &nbsp   </span>	            </div> </h2> </div> </div> </div> 
+																			
+																			<div class="ch about"> <div class="container"> 
+																					<h2 class="chtitle">         Introduction    </h2> 
+																					<div class="clear"> <div class="introduct"> 
+																							<img class="avatar" src="alinalagrange.png"> <P>     </p> 
+																								
+																								
+																								
+																								
+																								<P>     </p>   		<p style="font-size:18px;      ">  <span>   &nbsp   &nbsp     &nbsp  &nbsp        
+																										大家好！欢迎来到我的个人网盘。     
+																									
+																									
+																									
+	   
+																								
+																								<div class="chatbox">   <div class="line loading"> <span></span> 
+																										<span></span> <span></span> </div> </div> </div> 
+																							<ul class="skill clear"> <li> <p>   </p>      
+																									<div style="width:20%;"></div> 
+																								</div> 
+																							</li> 
+																						</ul> 
+																					</div>
+																				</div> 
+																			</div> 
+																		</div>    
+																	</div> 
+																</div>
+															
+															
+															
+															 
+															        
+																		<div class="clear">    
+																			<div class="chatbox">   <div class="line loading"> <span></span> 
+																					<span></span> <span></span> </div> </div> </div> 
+																		<ul class="skill clear"> <li> <p>   </p>      
+																				<div style="width:20%;"></div> 
+																			</div> 
+																		</li> 
+																	</ul> 
+																</div>    
+															</div> 
+														</div> 
+													   
+																	
+																	               
+																
+																
+																
+																
+																
+																
+      
+														<div class="gate ch"> <div class="container links"> 
+																<h2 id="toc_3"> </h2>   
+																<h2 id="toc_3">         <span>  <a>         内容索引      </h2>
+																		
+																		
+														</BR></BR>			
+																		
+																		
+																	
+																		
+																<a href="http://alinalagrange.github.io/GTM282：Measure Integration &Real Analysis.pdf">GTM282：Measure Integration &Real Analysis.pdf  </a>
+														</BR></BR> 
+														
+														<a href="http://palinalagrange.github.io/GTM249.Classical.Fourier.analysis,.Grafakos.L..(2ed.,.Springer,.2008)(ISBN.0387094318)(493s)_MCat_.pdf"> GTM249.Classical.Fourier.analysis,.Grafakos.L..(2ed.,.Springer,.2008)(ISBN.0387094318)(493s)_MCat_.pdf     </a>
+													</BR> </BR>
+												
+												<a href="http://alinalagrange.github.io/GTM253.Elementary.functional.analysis,.MacCluer.B..(Springer,.2009)(ISBN.0387855289)(211s)_MCf_.pdf">GTM253.Elementary.functional.analysis,.MacCluer.B..(Springer,.2009)(ISBN.0387855289)(211s)_MCf_.pdf  </a>
+											</BR> </BR>
+										
+										<a href="http://alinalagrange.github.io/GTM250.Modern.Fourier.Analysis,.Grafakos,.Loukas,.(2008,.ISBN.978-0-387-09433-5).pdf">GTM250.Modern.Fourier.Analysis,.Grafakos,.Loukas,.(2008,.ISBN.978-0-387-09433-5).pdf  </a>
+									</BR> </BR>
+								
+								<a href="http://alinalagrange.github.io/GTM025.Real.and.Abstract.Analysis.[Hewitt].0387901388.pdf">GTM025.Real.and.Abstract.Analysis.[Hewitt].0387901388.pdf    </a>
+						</BR> </BR>
+						
+
+		<a href="http://alinalagrange.github.io/复分析(Elias M. Stein, Rami Shakarchi).pdf">复分析(Elias M. Stein, Rami Shakarchi).pdf    </a>
+</BR> </BR>
+
+
+
+
+
+	<a href="http://alinalagrange.github.io/实分析Stein.pdf">实分析(Elias M. Stein, Rami Shakarchi).pdf    </a>
+</BR> </BR>
+
+
+
+
+
+
+
+
+
+
+	<a href="http://alinalagrange.github.io/实分析与复分析（ real and complex analysis）.pdf     ">实分析与复分析（ real and complex analysis）.pdf  </a>
+</BR> </BR>   
+
+
+
+
+
+
+
+	<a href="http://alinalagrange.github.io/GTM082.Differential.forms.in.algebraic.topology.-.Raoul.Bott.and.Loring.W..Tu.pdf">GTM082.Differential.forms.in.algebraic.topology.-.Raoul.Bott.and.Loring.W..Tu.pdf  </a>
+</BR> </BR>
+
+
+
+
+
+	<a href="http://alinalagrange.github.io/GTM211.Algebra.-.Serge.Lang.pdf">GTM211.Algebra.-.Serge.Lang.pdf          </a>
+</BR> </BR>   
+
+
+
+
+
+
+
+
+
+																
+<p style="font-size:14px;text-align:center;">
+	
+	
+	
+	
+	<div class="chatbox">   <div class="line loading"> <span></span> 
+			<span></span> <span></span> </div> </div> </div> 
+<ul class="skill clear"> <li> <p>   </p>      
+		<div style="width:32%;"></div> 
+	</div> 
+</li> 
+</ul> 
+
+
+</div>
+
+
+            			
+  
+
+
+<div>
+	<p>       &nbsp  </p>
+</div>  
+
+<div>
+	<p>       &nbsp  </p>
+</div>  
+
+
+<div>
+	<p>       &nbsp  </p>
+</div>  
+
+
+<div>
+	
+</div>  
+
+<div>
+	
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gate ch"> <div class="container links"> 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+
+<div>
+
+</div>  
+
+<div>
+
+</div>  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+
+</br>  
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>   	<p>       &nbsp  </p>   	<p>       &nbsp  </p>   	<p>       &nbsp  </p>   	<p>       &nbsp  </p>   	<p>       &nbsp  </p>
+
+
+</div>  
+
+
+<div>
+<p>       &nbsp        </p>
+</div>  
+
+
+<div>
+
+</div>  
+
+<div>
+
+</div>  
+
+
+<div class="gate ch"> <div class="container links"> 
+
+
+
+
+<h2 class="chtitle"     <span>  返回我的主页  </span>        </h2> 
+
+<div class="clear"> 
+<a href="    index.html    " target="_blank"> 
+<div class="item"> 
+<div class="avatar"> <img src="    ZY.png  "> </div>
+<div class="inner"> <h5>          homepage             </h5> <p> </p> </div>      
+
+
+
+</div> </a>
+
+
+</div></div> </div>
+
+
+
+
+
+
+
+
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+<div>
+<p>       &nbsp  </p>
+</div>  
+
+
+
+
+
+
+
+
+<div class="footer ch"> <div class="container"> <h3>    
+
+</h3> <p> </p> 
+<p class="c"><a href="                      ">  <H2> My E-mail :  alinalagrange.cn@gmail.com     &nbsp      </H2>  </a></p> 
+ 
+</div> 
+</div>
+</div>
+<script src="js/page.3a0791a3.js"></script> 
+<script type="text/javascript" src="js/stats.js" charset="UTF-8">
+</script>
+
+<audio autoplay>
+<source src="5.mp3">
+</audio>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

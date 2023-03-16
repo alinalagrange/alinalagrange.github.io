@@ -1,135 +1,586 @@
-<?php
-?>
+
+
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-				<link rel="shortcut icon" type="image/x-icon" href="      http://proj.tt1008.top/ZY.png"   >  
-					<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-						<title>  Human verification       </title>
-						<style>
-							*{
-							padding: 0px;
-							margin: 0px;
-							}
-							body{
-							width: 100%;
-							height: 100vh;
-							}
-							.main{
-							position: relative;
-							width: 100%;
-							height: 100%;
-							background: #000;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							}
-							.circle{
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							width: 200px;
-							height: 200px;
-							background-image: linear-gradient(0deg,
-							rgb(47,102,255),
-							rgb(153,64,255) 30%,
-							rgb(238,55,255) 60%,
-							rgb(255,0,76) 100%);
-							border-radius: 50%;
-							animation: rotate 1s linear infinite;
-							}
-							/* 模糊 */
-							.circle::before{
-							content: "";
-							position:absolute;
-							width: 200px;
-							height: 200px;
-							background-image: linear-gradient(0deg,
-							rgb(47,102,255),
-							rgb(77,64,255) 30%,
-							rgb(111,55,255) 60%,
-							rgb(255,0,111) 100%);
-							border-radius: 50%;
-							filter: blur(35px);
-							}
-							/* 黑圆 */
-							.circle::after{
-							content: "";
-							position:absolute;
-							width: 150px;
-							height: 150px;
-							background:#000;
-							border-radius: 50%;
-							}
-							h1{
-							position: absolute;
-							color: #fff;
-							font-weight: bold;
-							}
-							.title{
-							color: #FFFFFF;
-							position:absolute;
-							top:10%;
-							text-shadow:0px 0 60px #fff;
-							text-align: center;
-							font-size: 2rem;
-							font-weight: bold;
-							}
-							.text{
-							color: #FFFFFF;
-							position:absolute;
-							bottom:10%;
-							text-shadow:0px 0 60px #fff;
-							font-weight: bold;text-align: center;
-							}
-							/* 添加动画 */
-							@keyframes rotate{
-							0%{
-							transform: rotate(0deg);
-							}
-							100%{
-							transform: rotate(360deg);
-							}
-							}
-						</style>
-					</head>
-					<body onload="time()">
-						<div class="main">
-							<a href="  https://proj.tt1008.top/analysis.html     " >   <div class="circle"></div></a>         
-							
-							<h1 id="second">	<a href="  https://proj.tt1008.top/analysis.html    " >   30s</a></h1>      
-							<p class="title">      [点移动的蓝光晕圆环来验证您是人类而不是程序]          </p>
-							<p class="text">       正在验证，请在30秒内完成点击                              </p>
-						</div>
-					</body>
-					<script>
-						function cs(){
-						var query = window.location.search.substring(1);
-						var vars = query.split("&");
-						for (var i=0;i<vars.length;i++) {
-							var pair = vars[i].split("=");
-							if(pair[0] == "url"){
-							return pair[1];
-							}
-							}
-							return("  http://proj.tt1008.top/analysis.html           ");//无指定跳转地址，将跳转此网页地址。
-							}
-							function time(){
-							var sec = document.getElementById("second");
-							var i = 30;//设置定时时间
-							var timer = setInterval(function(){
-							i--;
-							sec.innerHTML = i+"s";
-							if(i==1){
-							window.location.href = cs();
-							}
-							},1000);
-							
-							function goBack(){ 
-							window.history.go(-1);
-							} 
-							}
-							</script>
-						</html>
+<head>
+
+
+<title>数学分析  每周一题 </title>
+<link rel="shortcut icon" href="alina.png  " />
+
+<meta charset="utf-8" />
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Pragma" CONTENT="no-cache">
+<meta http-equiv="Expires" CONTENT="0">
+             
+<meta name="y_key" content="6979686844ba4630" />
+	
+	
+	
+	
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	
+	
+	
+	
+<meta name="keywords"
+    content="ALINALAGRANGE  " />
+    
+    
+    
+<meta name="description"
+    content="   " />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="7 days" />
+
+<link rel="stylesheet" href="style.css">
+
+<script charset="UTF-8" src="abcd.js"></script>         
+
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" style="padding: 0px">
+                    <img src="      
+                    	alina.png
+                    	" style="width: 45px; padding-left: 8px; padding-top: 8px" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                
+
+
+
+
+<ul class="nav navbar-nav">     
+    
+    <li><a href="           index.html          " class="navbar-item hidden-sm">Return to My homepage  </a></li>
+    <li><a href="  index.html#v " class="navbar-item hidden-sm">Contact   Author  </a></li>
+    
+</ul>
+<ul class="nav navbar-nav navbar-right" style="color: white;font-weight:normal">
+    
+    <li style="margin-top:5px;margin-right:15px">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="vertical-align:middle; padding-right: 2px;padding-top:0px">
+                    <input id="radTypeLaTeX" style="vertical-align:middle;margin-right:5px" type="radio" name="type" value="0" checked="checked" />
+                </td>
+                <td style="vertical-align:middle;padding-top:2px;line-height:18px;">
+                  阅读模式
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:middle; padding-right: 2px;padding-top:0px">
+                    <input id="radTypeOctave" style="vertical-align:middle;margin-right:5px;position:relative;top:0px" type="radio" name="type" value="1" />
+                </td>
+                <td style="vertical-align:middle;padding-top:2px;line-height:18px;">
+                      普通模式 
+                </td>
+            </tr>
+        </table>
+    </li>
+      
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+<input type="hidden" id="languageHidden" value='en' />
+
+<div class="container" style="padding-top: 70px;">
+    <div class="row rowpad">
+        <div class="col-sm-8 col-sm-offset-2 rowpad">
+            <h1 style="font-size: 20px">
+             <B>数学分析  每周一题</B>  
+            </h1>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2 rowpad">
+            <h2>
+ <B>你好，这里是我的个人网站数学分析的每周一题栏目(数学分析每周一题，其中数学分析指的是数学中的分析学, 主要包括微积分，实分析，复分析)        </B>  
+            </h2>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2">
+              
+        </div>
+
+    </div>
+
+
+    <div class="row rowpad">
+        <div class="col-sm-8 col-sm-offset-2" style="position: relative">
+            <img src="  analysis.png"
+                style="position: relative; max-width: 100%; height: auto; border-radius: 5px" />
+              
+        </div>
+    </div>
+
+   
+
+
+
+<p>
+	&nbsp  
+	
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+
+
+
+
+
+
+
+
+
+    <div class="row rowpad">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="row rowpad center">
+            
+                <div class="col-sm-6 rowpad">
+                    <img src="alina.png" style="border-radius: 5px" /> <h5>  <B>Question 1 </B>   </h5>
+                    <div>  <a href="q1.html">  <H2>   打开看看O(∩_∩)O      </H2>  </a>    </div>
+              </div>
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <img src="alina.png" style="border-radius: 5px" />
+ <h5>  <B>Question 2 </B>   </h5> 
+ 
+                          <div>  <a href="   q2.html">  <H2>    打开看看O(∩_∩)O         </H2>  </a>    </div>
+     
+                </div>
+            
+            </div>    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p>   	&nbsp    
+        </p>   
+    
+<p>
+&nbsp  
+
+</p>     
+
+<p>
+&nbsp  
+			</p>
+	
+	
+	   <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 3 </B>   </h5>     
+                                             <div>  <a href="    q3.html">  <H2> 打开看看O(∩_∩)O              </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 4 </B>   </h5>
+                          <div>  <a href="q4.html   ">  <H2>         打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+			
+			<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+			
+    	              
+            <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 5 </B>   </h5>     
+                                             <div>  <a href="   q5.html">  <H2>   打开看看O(∩_∩)O            </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 6 </B>   </h5>
+                          <div>  <a href="            q6.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+
+
+
+<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>     <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 7 </B>   </h5>     
+                                             <div>  <a href="   q7.html">  <H2>   打开看看O(∩_∩)O            </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 8 </B>   </h5>
+                          <div>  <a href="            q8.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+
+
+
+
+        </div>        
+
+
+
+  
+
+   
+   
+            
+            
+       
+            
+            <p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+                         <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 9 </B>   </h5>     
+                                             <div>  <a href="   q9.html">  <H2>   打开看看O(∩_∩)O               </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 10 </B>   </h5>
+                          <div>  <a href="            q10.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+				
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+				
+				  <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 11 </B>   </h5>     
+                                             <div>  <a href="   q11.html">  <H2>   打开看看O(∩_∩)O              </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 12   </B>   </h5>
+                          <div>  <a href="            q12.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+				
+				
+				
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+				
+				  <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 13 </B>   </h5>     
+                                             <div>  <a href="   q13.html">  <H2>   打开看看O(∩_∩)O            </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 14 </B>   </h5>
+                          <div>  <a href="            q14.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+				
+				
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+				
+  <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 15   </B>   </h5>     
+                                             <div>  <a href="   q15.html">  <H2>   打开看看O(∩_∩)O            </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 16 </B>   </h5>
+                          <div>  <a href="            q16.html">  <H2>     打开看看O(∩_∩)O    </H2>  </a>    </div>
+                </div>
+    
+        </div>
+				
+				
+				
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+				
+				  <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 17   </B>   </h5>     
+                                             <div>  <a href="   q17.html">  <H2>   打开看看O(∩_∩)O               </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 18   </B>   </h5>
+                          <div>  <a href="            q18.html">  <H2>     打开看看O(∩_∩)O       </H2>  </a>    </div>
+                </div>
+    
+        </div>    
+            
+            
+            
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>      
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			  <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 19   </B>   </h5>     
+                                             <div>  <a href="   q19.html">  <H2>   打开看看O(∩_∩)O               </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 20   </B>   </h5>
+                          <div>  <a href="            q20.html">  <H2>     打开看看O(∩_∩)O       </H2>  </a>    </div>
+                </div>
+    
+        </div>
+				
+				
+				
+				
+				
+				
+				
+				
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>       <div class="row rowpad center">
+            	
+            	
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 21   </B>   </h5>     
+                                             <div>  <a href="   .html">  <H2>   敬请期待            </H2>  </a>    </div>
+                </div>   
+            
+            
+                <div class="col-sm-6 rowpad">
+                    <h5>  <B>Question 22   </B>   </h5>
+                          <div>  <a href="            .html">  <H2>     敬请期待    </H2>  </a>    </div>
+                </div>
+    
+        </div> 
+
+				
+				
+				
+				
+				
+				
+				
+						<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>       <div class="row rowpad center">
+					
+					
+					<div class="col-sm-6 rowpad">
+						<h5>  <B>Question 23   </B>   </h5>     
+						<div>  <a href="   .html">  <H2>   敬请期待            </H2>  </a>    </div>
+					</div>   
+					
+					
+					<div class="col-sm-6 rowpad">
+						<h5>  <B>Question 24   </B>   </h5>
+						<div>  <a href="            .html">  <H2>     敬请期待    </H2>  </a>    </div>
+					</div>
+					
+				</div> 
+				
+				
+				
+				
+				
+						<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>       <div class="row rowpad center">
+					
+					
+					<div class="col-sm-6 rowpad">
+						<h5>  <B>Question 25   </B>   </h5>     
+						<div>  <a href="   .html">  <H2>   敬请期待            </H2>  </a>    </div>
+					</div>   
+					
+					
+					<div class="col-sm-6 rowpad">
+						<h5>  <B>Question 26   </B>   </h5>
+						<div>  <a href="            .html">  <H2>     敬请期待    </H2>  </a>    </div>
+					</div>
+					
+				</div> 
+			
+			
+			
+			
+			
+			
+			
+					<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>       <div class="row rowpad center">
+				
+				
+				<div class="col-sm-6 rowpad">
+					<h5>  <B>Question 27   </B>   </h5>     
+					<div>  <a href="   .html">  <H2>   敬请期待            </H2>  </a>    </div>
+				</div>   
+				
+				
+				<div class="col-sm-6 rowpad">
+					<h5>  <B>Question 28   </B>   </h5>
+					<div>  <a href="            .html">  <H2>     敬请期待    </H2>  </a>    </div>
+				</div>
+				
+			</div> 
+		
+		
+				<p>&nbsp</p>   <p>&nbsp</p>   <p>&nbsp</p>       <div class="row rowpad center">
+			
+			
+			<div class="col-sm-6 rowpad">
+				<h5>  <B>Question 29   </B>   </h5>     
+				<div>  <a href="   .html">  <H2>   敬请期待            </H2>  </a>    </div>
+			</div>   
+			
+			
+			<div class="col-sm-6 rowpad">
+				<h5>  <B>Question 30     </B>   </h5>
+				<div>  <a href="            .html">  <H2>     敬请期待    </H2>  </a>    </div>
+			</div>
+			
+		</div> 
+	
+	
+	
+				
+				
+				
+				
+				
+				
+				
+				<div class="col-sm-6 rowpad">
+                    <h5>  <B>         </B>   </h5>   
+                                          <div>  <a href="       ">  <H2>    </H2>  </a>    </div>      
+                </div>
+            </div>
+            
+            <div class="row rowpad center">
+                   
+            
+           
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="genericDialog" class="modal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="genericDialogTitle" class="modal-title"></h4>
+                </div>
+                <div id="genericDialogBody" class="modal-body"></div>
+                <div class="modal-footer">
+                      
+                      
+                      
+                      
+                        
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    </div>
+
+  
+
+
+
+
+
+
+<audio autoplay>
+	<source src="moliya.mp3">
+	</audio> 
+
+
+
+
+</body>
+</html>    

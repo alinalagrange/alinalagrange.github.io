@@ -1,0 +1,563 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+		
+		<link rel="shortcut icon" type="image/x-icon" href="ZY.png">    
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+						
+						<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({
+							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+							});
+							
+							
+						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+					
+				
+					
+						<script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+						<TITLE>    
+				LaTeX  output  (subpage    of   Alina  Lagrange)  </TITLE>         
+						<SCRIPT language="JavaScript">        
+						</SCRIPT> 
+						<style>
+							
+							
+							
+							body {
+							
+							background: linear-gradient(180deg, #CDFFCB,#FFFFF0);  
+							
+							}
+						</style>  
+						
+						
+						
+						
+						<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+						</script>
+						<script type="text/javascript"
+							src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+						</script>
+					</head>  
+   
+					
+					
+					<html>  
+					
+  
+					   
+							
+							
+							
+						   
+   
+											<TABLE width="100%" height="144" border="0" cellspacing="0" cellpadding="8">
+												<TBODY>
+													<TR>
+														<TD width="100%" height="208
+															" bgcolor="#A0FEAA">
+															<H1 style="  font-family:   "> &nbsp      <B>  \( \mathbb{Notebook   }  \        \)        </B>    &nbsp       \( \mathscr   {section  }\  \  \mathrm  {}    9.3     \)   &nbsp 
+																
+																
+															</H1>        
+														                                 </TD>
+																<TD width="33%" align="right" bgcolor="#77FE7E"><IMG width="146" 
+																		height="147" align="middle" src="ZY.png  " 
+																		border="1">    </TD></TR>
+																	
+																
+															</TD></TR>
+														
+													</TBODY></TABLE>
+											              
+										                     
+										          
+                
+	<a href="index.html "> <H2>链接:return to my homepage
+		</H2> </a>
+	
+	
+$$ $$ 
+	
+	</br>
+               
+	
+	   <B>  补充 ：Proof of lemma 2  </B>
+	$$ 
+$$
+Let
+
+$$R
+=\left(\begin{array}{cccc}
+r_{11}^{} & \cdots & & r_{1 n}^{} \\
+\vdots & \ddots & & \vdots \\
+r_{n 1}^{} & \cdots & \ddots & r_{n n}^{}
+\end{array}\right)
+$$
+
+
+$$
+\left(R^{-1}\right)^{T}=\left(\begin{array}{cccc}
+r_{11}^{\prime} & \cdots & & r_{1 n}^{\prime} \\
+\vdots & \ddots & & \vdots \\
+r_{n 1}^{\prime} & \cdots & \ddots & r_{n n}^{\prime}
+\end{array}\right)
+$$
+And
+$$x=(x_1,\cdots,x_n)^T , 
+y=(y_1,\cdots,y_n)^T$$
+
+then
+    
+$$
+\begin{aligned}
+& x^{T} Q x+y^{T} Q^{-1} y \\
+=& x^{T} R^{T} R x+y^{T} R^{-1}\left(R^{T}\right)^{-1} y \\
+=&(R x)^{T} R x+\left(\left(R^{-1}\right)^{T} y\right)^{T}\left(R^{-1}\right)^{T} y \\
+=& \sum_{m=1}^{n}\left(\sum_{k=1}^{n} r_{m k} x_{k}\right)^{2}+\sum_{m=1}^{n}\left(\sum_{k=1}^{n}r_{m k}^{\prime } y_{k}\right)^{2}
+\\ \geqslant&\left
+.
+\sum_{m=1}^{n}\left(2\left|\sum_{k=1}^{n} r_{m k} x_{k}\right|
+\left|\sum_{k=1}^{n} r_{m k}^{\prime} y_{k}\right|\right.\right)
+\\
+\geqslant&\left
+|\sum_{m=1}^{n}\left(2\left(\sum_{k=1}^{n} r_{m k} x_{k}\right)\left(\sum_{k=1}^{n} r_{m k}^{\prime} y_{k}\right)\right)\right|
+\\
+=&\left|2\left(R x\right)^{T}\left(\left(R^{-1}\right)^{T} y\right)\right|
+\\
+=&∣2 x^{T} R^{T}\left(R^{T}\right)^{-1} y|
+\\
+=&2| x^{T} y
+∣
+\end{aligned}
+$$
+ 
+
+ 
+ 
+ 
+ 
+	
+ 
+ 
+
+	
+ 
+			  
+			  
+			  
+			  </br>  </br>   </br>   </br>   </br>     
+         Proof of lemma 3:$$  $$
+Say \(f(x)\)
+has a max. value
+
+
+\(M\) Then
+$$
+\begin{aligned}
+&\left(\int_{0}^{1}(f(x))^{n} d x\right)^{\frac{1}{n}} \\
+\leq &\left(\int_{0}^{1} M^{n} d x\right)^{\frac{1}{n}}=M
+\end{aligned}
+$$
+
+Since \(f(x)\) is continuous, given \(\epsilon>0\) there exists a \(\delta\) such that
+$$
+f(x)>M-\epsilon
+$$
+for all \(x \in\left(x_{0}-\delta, x_{0}+\delta\right)\).
+
+
+Hence, we have
+$$
+\begin{array}{c}
+\int_{0}^{1} f(x)^{n} d x>\int_{x_{0}-\delta}^{x_{0}+\delta} f(x)^{n} d x \\
+>\int_{x_{0}-\delta}^{x_{0}+\delta}(M-\epsilon)^{n} d x \\
+=(M-\epsilon)^{n} 2 \delta
+\end{array}
+$$
+Hence for any \(\epsilon>0\)
+$$
+\begin{array}{l}
+\left(\int_{0}^{1} f(x)^{n} d x\right)^{1 / n} \\
+>(M-\epsilon)(2 \delta)^{1 / n}
+\end{array}
+$$
+Letting \(n \rightarrow \infty\)
+$$\lim _{n \rightarrow \infty}\left(\int_{0}^{1} f(x)^{n} d x\right)^{1 / n
+}\geq(M-\epsilon)$$
+
+
+
+
+
+
+Fix \(\delta>0\) and let \(S_{\delta}:=\left\{x,|f(x)| \geqslant\|f\|_{\infty}-\delta\right\}\) for
+
+
+\(\delta<\|f\|_{\infty}\). We have
+$$
+\begin{aligned}
+\|f\|_{p} & \geqslant\left(\int_{S_{\delta}}\left(\|f\|_{\infty}-\delta\right)^{p} d \mu\right)^{1 / p} \\
+&=\left(\|f\|_{\infty}-\delta\right) \mu\left(S_{\delta}\right)^{1 / p}
+\end{aligned}
+$$
+since \(\mu\left(S_{\delta}\right)\)
+is finite and positive. This gives
+$$
+\liminf _{p \rightarrow+\infty}\|f\|_{p} \geqslant\|f\|_{\infty}
+$$
+As \(|f(x)| \leqslant\|f\|_{\infty}\) for almost every \(x\), we have for \(p>q\),
+$$
+\|f\|_{p} 
+\leqslant\left(\int_{X}|f(x)|^{p-q}|f(x)|^{q} d \mu\right)^{1 / p} 
+\leqslant\|f\|_{\infty}^{\frac{p-q}{p}}\|f\|_{q}^{q / p},
+$$
+giving the reverse inequality.
+$$ $$
+         
+      
+$$
+$$
+
+
+<p>    &nbsp
+</p>   
+Proof of theorem 4:$$
+$$
+
+作 Lyapunov函数
+$$
+V=\frac{1}{2} e^{\mathrm{T}} P e+\frac{1}{2} \rho \eta^{\mathrm{T}} P_{\eta} \eta+\frac{1}{2} \hat{\theta}^{\mathrm{T}} \hat{\theta},
+$$
+其中 \(\tilde{\theta}=\theta-\theta^{*}, \rho>0
+\).
+对 \(V\) 求导
+	,
+设
+  \(\lambda_{c}\) 和 \(\lambda_{\eta}\) 分别是 \(Q_{c}\) 和 \(Q_{\eta}\)的最小特征值.
+
+</br>
+$$
+\begin{aligned}
+\dot{V}=& \frac{1}{2} e^{\mathrm{T}}\left(P_{\mathrm{c}} A_{\mathrm{c}}+A_{\mathrm{c}}^{\mathrm{T}} P_{\mathrm{c}}\right) e+e^{\mathrm{T}} P_{\mathrm{c}} b_{\mathrm{c}} \hat{\theta}^{\mathrm{T}} \psi+e^{\mathrm{T}} P_{\mathrm{c}} b_{\mathrm{d}} \eta_{1}+\frac{1}{2} \rho \eta^{\mathrm{T}}\left(P_{\eta} A_{\eta}+A_{\eta}^{\mathrm{T}} P_{\eta}\right) \eta \\
+&+\rho \mu \eta^{\mathrm{T}} P_{\eta} b_{\eta}\left(d^{\mathrm{T}} e+\beta r+d^{\mathrm{T}} x_{\mathrm{m}}\right)+\hat{\theta}^{\mathrm{T}} \dot{\theta} \\
+=&-\frac{1}{2} e^{\mathrm{T}} Q_{\mathrm{c}} e+e^{\mathrm{T}} P_{\mathrm{c}} b_{\mathrm{d}} \eta_{1}-\frac{1}{2} \rho \eta^{\mathrm{T}} Q_{\eta} \eta+\rho \mu \eta^{\mathrm{T}} P_{\eta} b_{\mu}\left(d^{\mathrm{T}} e+\beta r+d^{\mathrm{T}} x_{\mathrm{m}}\right)-\sigma_{\mathrm{s}} \hat{\theta}^{\mathrm{T}} \theta
+\\&
+\leqslant-\frac{1}{2} \lambda_{\mathrm{c}}\|e\|^{2}+e^{\mathrm{T}} P_{\mathrm{c}} b_{\mathrm{d}} \eta_{1}-\frac{1}{2} \rho \lambda_{\eta}\|\eta\|^{2}+\rho \mu \eta^{\mathrm{T}} P_{\eta} b_{\mu}\left(d^{\mathrm{T}} e+\beta r+d^{\mathrm{T}} x_{\mathrm{m}}\right)-\sigma_{\mathrm{s}} \hat{\theta}^{\mathrm{T}} \theta
+\\
+\leqslant &-\frac{1}{8} \lambda_{\mathrm{c}}\|e\|^{2}-\frac{1}{2}\left(\rho\left(\lambda_{\eta}-\mu\right)-\frac{2}{\lambda_{\mathrm{c}}}\left\|P_{\mathrm{c}} b_{\mathrm{d}}\right\|-\frac{4}{\lambda_{\mathrm{c}}} \rho^{2} \mu^{2}\left\|P_{\eta} b_{\eta} d^{\mathrm{T}}\right\|^{2}\right)\|\eta\|^{2} \\
+&+\frac{1}{2} \rho \mu\left\|P_{\eta} b_{\eta}\right\|^{2}\left(\beta r+d^{\mathrm{T}} x_{\mathrm{m}}\right)^{2}-\sigma_{s} \hat{\theta}^{\mathrm{T}} \theta_{}
+\end{aligned}
+$$
+其中
+$$
+\sigma_{\mathrm{s}}=\left\{\begin{array}{ll}
+0, & \|\theta\| \leqslant M_{0} \\
+\sigma\left(\frac{\|\theta\|}{M_{0}}-1\right), & M_{0}<\|\theta\| \leqslant 2 M_{0} \\
+\sigma, & 2 M_{0}<\|\theta\| 。
+\end{array}\right.
+$$
+设
+$$
+\rho=\frac{2}{\lambda_{\eta}}\left(1+\frac{2}{\lambda_{\mathrm{c}}}\left\|P_{\mathrm{c}} b_{\mathrm{d}}\right\|+\frac{4}{\lambda_{\mathrm{c}}}\left\|P_{\eta} b_{\eta} d^{\mathrm{T}}\right\|^{2}\right), \quad \mu^{*}=\frac{1}{\rho},
+$$
+则当 \(\mu \leqslant \mu^{*}\) 时,有
+$$
+\dot{V}  \leqslant-\frac{1}{8} \lambda_{\mathrm{c}}\|e\|^{2}-\frac{1}{4} \rho \lambda_{\eta}\|\eta\|^{2}-\sigma_{\mathrm{s}} \hat{\theta}^{\mathrm{T}} \theta+m_{1},
+$$
+其中
+$$
+m_{1}=\sup _{t \geqslant 0} \frac{1}{2} \rho \mu\left\|P_{\eta} b_{\eta}\right\|^{2}\left(\beta r(t)+d^{\mathrm{T}} x_{\mathrm{m}}(t)\right)^{2} 。
+$$
+
+
+   <p>         &nbsp
+        </p>  
+   
+         
+         
+         
+         
+      
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+      
+</br>
+
+
+</br>
+
+
+</br>
+
+
+    
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+         
+        <p>    &nbsp
+        </p>  
+        
+  <audio autoplay>
+  <source src="moliya.mp3">
+  </audio>
+         
+        <p>    &nbsp
+        </p>  
+        
+        
+        
+        
+        
+        
+        
+														
+														
+														
+														
+														
+														
+														          
+														
+														
+														
+														<audio autoplay>
+															<source src="  
+											moliya.mp3">
+																</audio> 
+																
+																
+																
+																
+																
+														   </html>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+    
+ 		
+ 		  
