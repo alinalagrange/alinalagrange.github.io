@@ -1,0 +1,314 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+		
+		<link rel="shortcut icon" type="image/x-icon" href="      ZY.png">    
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+						
+						<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({
+							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+							});
+							
+							
+						</script><script src="MathJaxes5tex-chtml.js" id="MathJax-script" async></script>
+						
+						
+     
+     <link rel="stylesheet" href=" questionbox.css">
+						
+						<script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+						<TITLE>   数学(中的)分析学 
+							每周一题___18       </TITLE>               
+						<SCRIPT language="JavaScript">        
+						</SCRIPT> 
+						<style>
+							
+							
+							
+							body {
+							
+							background: #BFAFFF;   
+							
+							}
+						</style>  
+						
+						
+						
+						
+						<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+						</script>
+						      
+						
+						
+						
+						
+						
+						
+						<style type="text/css">
+							button {  
+							width: 200px;  
+							padding:8px;  
+							background-color: #428bca;  
+							border-color: #357ebd;  
+							color: #fff;  
+							-moz-border-radius: 10px;  
+							-webkit-border-radius: 10px;  
+							border-radius: 10px; /* future proofing */  
+							-khtml-border-radius: 10px; /* for old Konqueror browsers */  
+							text-align: center;  
+							vertical-align: middle;  
+							border: 1px solid transparent;  
+							font-weight: 900;  
+							font-size:125%  
+							}  
+						</style>  
+						
+						
+					</head>  
+					
+					
+					
+					<html>  
+						
+						
+						
+						
+						
+						
+						
+						
+						<TABLE width="100%" height="144" border="0" cellspacing="0" cellpadding="8">
+							<TBODY>
+								<TR>
+									<TD width="100%" height="208
+										" bgcolor="#A4A4FF">
+										<H1 style="  font-family:楷体"> &nbsp      <B>            \(\mathrm  {Exercise     \  \oplus  \     Problem }   \ 18												\     \)            </B>   &nbsp         
+									</H1>        
+								</TD>
+								<TD width="33%" align="right" bgcolor="#A4A4FF"><IMG width="193" 
+										height="192" align="middle" src="alinalagrange.png  " 
+										border="1">    </TD></TR>
+								
+								
+							</TD></TR>
+						
+					</TBODY></TABLE>
+				<p>    &nbsp
+				</p>  
+				
+				<B>    
+					\( \qquad  \)你好，这里是我的个人网站数学分析的每周一题栏目(数学分析每周一题，其中数学分析指的是数学中的分析学,  主要包括微积分，实分析，复分析)    \(\qquad    \    \)——————Alina Lagrange  
+				</B>
+				
+				
+				
+				
+				
+				
+				
+				<p>    &nbsp
+				</p>  
+				
+	
+				
+				
+				
+				求曲面  \[ (x^2+y^2 )^2+z^4=y \]
+			         围成的(立体的)体积.   
+				
+				
+				<p>    &nbsp
+				</p>     
+				
+				<p><B>  \(\mathcal{P}roof.  \)         </B></p>     
+				   考虑坐标变换
+				$$
+				\left\{\begin{array}{l}
+				x=\sqrt{r \cos \varphi} \cos \theta \\
+				y=\sqrt{r \cos \varphi} \sin \theta \\
+				z=\sqrt{r \sin \varphi}
+				\end{array}\right.
+				$$
+				注意到曲面表面上有
+				$$
+				r^2=\sqrt{r \cos \varphi} \sin \theta
+				$$
+				Jacobi行列式
+				$$
+				\begin{aligned} 
+				
+				
+				\frac{\partial(x, y, z)}{\partial(r, \varphi, \theta)}=&  
+				
+				
+				\left|\begin{array}{ccc}
+				\frac{\cos \varphi}{2 \sqrt{r} \cos \varphi} \cos \theta & \frac{\cos \varphi}{2 \sqrt{r} \cos \varphi} \sin \theta & \frac{\sin \varphi}{2 \sqrt{r \sin \varphi}} \\
+				-\frac{r \sin \varphi}{2 \sqrt{r \cos \varphi}} \cos \theta & -\frac{r \sin \varphi}{2 \sqrt{r \cos \varphi}} \sin \theta & \frac{r \cos \varphi}{2 \sqrt{r \sin \varphi}} \\
+				-\sqrt{r \cos \varphi} \sin \theta & \sqrt{r \cos \varphi} \cos \theta & 0
+				\end{array}\right| \\     
+				=&-\frac{r \cos ^2 \varphi}{4 \sqrt{r \sin \varphi}} \sin ^2 \theta-\frac{r \sin ^2 \varphi}{4 \sqrt{r \sin \varphi}} \cos ^2 \theta-\frac{r \sin ^2 \varphi}{4 \sqrt{r \sin \varphi}} \sin ^2 \theta\\&    \ \ \ \   -\frac{r \cos ^2 \varphi}{4 \sqrt{r \sin \varphi}} \cos ^2 \theta \\
+				=&  -\frac{1}{4} \sqrt{\frac{r}{\sin \varphi}}         
+				
+				
+				\end{aligned}
+				$$
+				
+				
+				
+				
+				
+ 
+		结合对称性, 注意到 \(y \geq 0\). 记 \(\Omega\)   为其位于第一卦限内的部分
+				$$
+				\begin{aligned}
+				V & =4 \iiint_{\Omega} \mathrm{d} x \mathrm{~d} y \mathrm{~d} z \\
+				& =\int_0^{\frac{\pi}{2}} \mathrm{~d} \theta \int_0^{\frac{\pi}{2}} \frac{\mathrm{d} \varphi}{\sqrt{\sin \varphi}} \int_0^{\sqrt[3]{\cos \varphi \sin ^2 \theta}} \sqrt{r} \mathrm{~d} r \\
+				& =\frac{2}{3} \int_0^{\frac{\pi}{2}} \sqrt{\cot \varphi} \mathrm{d} \varphi \\
+				& =\frac{1}{3} \mathrm{~B}\left(\frac{1}{4}, \frac{3}{4}\right) \\
+				& =\frac{1}{3} \frac{\Gamma\left(\frac{1}{4}\right) \Gamma\left(\frac{3}{4}\right)}{\Gamma(1)} \\
+				& =\frac{\sqrt{2}}{3} \pi
+				\end{aligned}
+				$$
+				  
+				  
+      
+				
+				<p>    &nbsp
+				</p>  
+				\(\qquad   \qquad   \) 
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+				
+				<section>
+					<div class="box">  <div class="cube">   <div class="top"></div>
+							<div>
+								<span style="--i:0;"><a href="     index.html  " target="_blank">   <BR><h1>点这返回我的主页</h1><BR>  &nbsp &nbsp &nbsp &nbsp        
+											 <IMG width="127"       	height="127" align="center" src="alinalagrange.png  " 
+												border="1">&nbsp &nbsp &nbsp &nbsp   </a>    </span>
+									<span style="--i:1;"><a href=" analysis.html  " target="_blank">  <BR><h1>点这返回题目目录</h1><BR>  &nbsp &nbsp &nbsp &nbsp   <IMG width="127"       	height="127" align="center" src="alinalagrange.png  " 
+														border="1">&nbsp &nbsp &nbsp &nbsp      </a></span>
+													<span style="--i:2;"><a href=" index.html  " target="_blank">  <BR> <h1>点这返回我的主页  </h1><BR>  &nbsp &nbsp &nbsp &nbsp   <IMG width="127"       	height="127" align="center" src="alinalagrange.png  " 
+																		border="1">&nbsp &nbsp &nbsp &nbsp      </a></span>   
+																
+   
+																		<span style="--i:3;">
+																			<a href=" analysis.html  " target="_blank"> <BR>      <h1>点这返回题目目录     </h1><BR>  &nbsp &nbsp &nbsp &nbsp   <IMG width="127"       	height="127" align="center" src="alinalagrange.png  " 
+																							border="1">&nbsp &nbsp &nbsp &nbsp      </a></span>
+																								</div>       
+																							</div>
+																						</div>
+																					</section>
+																					
+
+				
+				
+				
+				
+				
+				
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>     
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>     
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>     
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>     
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  
+				<p>    &nbsp
+				</p>  	
+				
+				
+				
+				
+				
+				
+				
+				<audio autoplay>
+					<source src="moliya.mp3">
+					</audio> 
+					
+					
+					
+					
+				</html>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
