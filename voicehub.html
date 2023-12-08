@@ -40,48 +40,7 @@
 
 <script charset="UTF-8" src="abcd.js"></script>
 
-<script type="text/javascript">
-	var animationDuration = 300;
-    var languageNavigation = new Object();
-    languageNavigation.alertFillAllFields = "Please fill in your username and password you chose when you registered. If you have lost your credentials click 'Forgot password'.";
-    languageNavigation.alertInvalidCredentials = "Invalid username and/or password. Please provide correct login credentials. If you have lost your credentials click 'Forgot password'.";
-    languageNavigation.alertUserDeactivated = "This user has been deactivated for security reasons and is not allowed to login. Please contact us at office(at)verbosus.com if you need assistance.";
-    languageNavigation.titleAttention = "Attention";
-
-    // Call this method when the site is loaded
-    var initNavigation = function() {
-        // If user comes from http:// then redirect to https://
-        var url = document.location.href;
-        var protocolDocumentLocation = document.location.protocol;
-        var protocol = protocolDocumentLocation.endsWith(":") ? protocolDocumentLocation.substring(0,
-                protocolDocumentLocation.length - 1) : protocolDocumentLocation;
-        if (protocol == "http" && url.indexOf("localhost") == -1) {
-            document.location.href = "https" + url.substring(url.indexOf(":"));
-        }
-        
-        $("#inputUsername").off("keydown");
-        $("#inputUsername").on("keydown", function(e) {
-            var key = getKey(e);
-        	// 13 stands for the enter key
-        	if (key == System.key.enter) {
-        		login();
-        	}
-        });
-        $("#inputPassword").off("keydown");
-        $("#inputPassword").on("keydown", function(e) {
-            var key = getKey(e);
-        	// 13 stands for the enter key
-        	if (key == System.key.enter) {
-        		login();
-        	}
-        });
-    };
-
-    $(document).ready(function() {
-        initNavigation();
-    });
-</script>
-
+    
 
 
 </head>
@@ -109,8 +68,8 @@
 
 <ul class="nav navbar-nav">     
     
-    <li><a href="      https://alinalagrange.cn/                  " class="navbar-item hidden-sm">Return to My homepage  </a></li>
-    <li><a href="  https://alinalagrange.cn/#v   " class="navbar-item hidden-sm">Contact  Alina Lagrange    </a></li>
+    <li><a href="     ../                   " class="navbar-item hidden-sm">Return to My homepage  </a></li>
+    <li><a href="  ../#v   " class="navbar-item hidden-sm">Contact  Alina Lagrange    </a></li>
     
 </ul>
 <ul class="nav navbar-nav navbar-right" style="color: white;font-weight:normal">
@@ -426,9 +385,10 @@
                 													
                 													<div class="col-sm-6 rowpad">
                 														<img src="alina.png" style="border-radius: 5px" />
-                															<h5>  <B>Music    </B>   </h5> 
+                															<h5>  <B>Music
+30      </B>   </h5> 
                 															
-                					30				<div>  <a href="   m30.html">  <H2>    打开听听O(∩_∩)O      </H2>  </a>    </div>
+                					   				<div>  <a href="   m30.html">  <H2>    打开听听O(∩_∩)O      </H2>  </a>    </div>
                 															<div>  <a href="30.mp3">  <H2>    如果不可以自动播放  ，请点这里         </H2>  </a>    </div>  
                 														</div>   <div class="col-sm-6 rowpad">
                 														<img src="alina.png" style="border-radius: 5px" /> <h5>  <B>   Music
@@ -949,4 +909,4 @@
 
 
 </body>
-</html>   
+</html>    
