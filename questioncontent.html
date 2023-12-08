@@ -2,15 +2,14 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 	<head> 
-		<link rel="shortcut icon" type="image/x-icon" href="      ZY2.png">  
-			<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <link rel="Shortcut Icon" href="my.ico" type="image/x-icon" />					<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge">
 					<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
    
-							<title>              </title>
+							<title>     每周一题目录         </title>
 							<meta name="description" content="   ">
 								<meta name="keywords" content="   ">   
 									
-									
+ 
 									
 									
 							
@@ -23,8 +22,17 @@
 									   		
 									   		
 									   		  
-												    <script src="MathJaxes5tex-chtml.js" id="MathJax-script" async></script>  
- 
+										 <!--      		    <script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>  
+  --> <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+ MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); </script>
+ <script type="text/javascript" async src="https://wuli.wiki/MathJax/MathJax.js?config=TeX-MML-AM_CHTML&locale=zh-hans"> </script>
+		<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({
+							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+							});
+							
+							
+						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>      
 											</head>  
 											
 											
@@ -354,7 +362,8 @@
 <div class="footer ch"> <div class="container"> <h3>    
 
 </h3> <p> </p> 
-<p class="c"><a href="                      ">  <H2> My E-mail :  alinalagrange.cn@gmail.com     &nbsp      </H2>  </a></p> 
+<p class="c"><a href="                      ">  <H2> My E-mail :  mail@alinalagrange.line.pm   
+                  &nbsp      </H2>  </a></p> 
 <p class="c"><a href="                      ">  <H2>         &nbsp      </H2>  </a></p> 
 </div> 
 </div>
@@ -363,9 +372,18 @@
 <script type="text/javascript" src="js/stats.js" charset="UTF-8">
 </script>
 
-<audio autoplay>
-<source src="5.mp3">
-</audio>
+
+<audio id="bgm" src="5.mp3" autoplay loop></audio>
+
+<script>
+
+	var bgm = document.getElementById("bgm");
+
+	bgm.play();
+
+</script> 
+
+
 
 </body>
 </html>

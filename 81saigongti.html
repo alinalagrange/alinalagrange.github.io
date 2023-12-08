@@ -1,0 +1,610 @@
+      
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+<title>   AlinaLagrange 第五届八一赛供题与解答       </title>
+ <link rel="Shortcut Icon" href="my.ico" type="image/x-icon" />		
+<meta charset="utf-8" />
+<meta http-equiv="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="Pragma" CONTENT="no-cache">
+<meta http-equiv="Expires" CONTENT="0">
+             
+<meta name="y_key" content="6979686844ba4630" />
+	
+	
+	
+	
+	
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	
+	
+	
+	
+<meta name="keywords"
+    content="ALINALAGRANGE  " />
+    
+    
+    
+<meta name="description"
+    content="   " />
+<meta name="robots" content="index, follow" />
+ 
+
+<link rel="stylesheet" href="   style.css">
+	
+    
+	<script charset="UTF-8" src="abcd.js"></script>
+
+      
+          
+          <!--<script src="MathJax/es5/tex-chtml.js" id="MathJax-script" ></script>  
+          -->
+          
+          
+          
+          <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+          	MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); </script>
+          <script type="text/javascript" async src="https://wuli.wiki/MathJax/MathJax.js?config=TeX-MML-AM_CHTML&locale=zh-hans"> </script>
+          
+          
+          		<script type="text/x-mathjax-config">
+							MathJax.Hub.Config({
+							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+							});
+							
+							
+						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
+          
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="    " style="padding: 0px">
+                    <img src="      
+                    	alina.png
+                    	" style="width: 45px; padding-left: 8px; padding-top: 8px" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                
+
+
+              
+
+<ul class="nav navbar-nav">     
+    
+    <li><a href="    /                   " class="navbar-item hidden-sm">Return to My homepage  </a></li>
+    <li><a href="  index.html#v   " class="navbar-item hidden-sm">Contact  Alina Lagrange    </a></li>
+        <li><a href=" disc.html   " class="navbar-item hidden-sm"> Download Math Books       </a></li>
+    
+</ul>
+<ul class="nav navbar-nav navbar-right" style="color: white;font-weight:normal">
+    
+    <li style="margin-top:5px;margin-right:15px">
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+                <td style="vertical-align:middle; padding-right: 2px;padding-top:0px">
+                    <input id="radTypeLaTeX" style="vertical-align:middle;margin-right:5px" type="radio" name="type" value="0" checked="checked" />
+                </td>
+                   
+            </tr>
+            <tr>
+                <td style="vertical-align:middle; padding-right: 2px;padding-top:0px">
+                    <input id="radTypeOctave" style="vertical-align:middle;margin-right:5px;position:relative;top:0px" type="radio" name="type" value="1" />
+                </td>
+                   
+            </tr>
+        </table>
+    </li>
+      
+</ul>
+
+
+            </div>
+        </div> 
+    </div>
+    
+
+
+<input type="hidden" id="languageHidden" value='en' />
+
+<div class="container" style="padding-top: 70px;">
+    <div class="row rowpad">
+        <div class="col-sm-8 col-sm-offset-2 rowpad">
+            <h1 style="font-size: 20px">
+             <B>    \(  \mathcal  Alina \  \mathcal Lagrange  \)<BR>       第五届八一赛供题与解答                                 </B>  
+            </h1>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2 rowpad">
+            <h2>
+ <B>        </B>  
+            </h2>
+        </div>
+        <div class="col-sm-8 col-sm-offset-2">
+              
+        </div>
+
+    </div>
+
+
+    <div class="row rowpad">
+        <div class="col-sm-8 col-sm-offset-2" style="position: relative">
+            <img src="  analysis.png"
+                style="position: relative; max-width: 100%; height: auto; border-radius: 5px" />
+                
+             <BR>
+             	
+             	
+             	
+         <H2>    	
+       
+                
+      
+   \[\]
+   
+		
+	<B> Question 1.  </B>	<br> <br>   
+		设  \(m,n\in \mathbb N, n>m  \geq  2, 
+		\) \[I_{m,n }=\int _{\mathbb R_+ }\frac{\mathrm dx }{\sqrt[m ]{1+ x^n}}, \]
+		\[J_{m,n  }=\int _{\mathbb R_ +\times \mathbb R_  +    } e^{-x ^m-y^n   } \mathrm dx\, \mathrm dy .  \]
+		证明:  \(\forall n>m \), 
+		\[I_{m,n }< \frac{n}{(n-m)J_{m,n }}.       \]
+			<B> Proof.  </B>	  令 \[ t=\frac{x^n}{1+x^n},   \]	 
+			则 \[1+x^n=\frac{1}{1-t} ,  \  \    \mathrm  d x=\frac{1}{n}t^{\frac{1}{n}-1}(1-t)^{-1-\frac{1}{n}} .\]	因此\[
+			\begin{aligned}I_{m,n}&=\frac 1n  \int_0^1(1-t)^\frac{1}{m} t^{\frac{1}{n}-1}(1-t)^{-1-\frac{1}{n}}\mathrm dt\\&=\frac{1}{n}\int_0^1t^{\frac{1}{n}-1}(1-t)^{\frac{1}{m}-\frac{1}{n}-1}\mathrm dt\\&=\frac{1}{n}B\left(\frac{1}{n},\frac{1}{m}-\frac{1}{n}\right)\\&=\frac{1}{n}\frac{\Gamma(\frac{1}{n})\Gamma(\frac{1}{m}-\frac{1}{n})}{\Gamma(\frac{1}{m})}.
+			\end{aligned}        
+			\]同时\[ \begin{aligned}J _{m,n }&=      \int_{ \mathbb R_ +}e^{-x^m }\mathrm dx      
+			\int_{ \mathbb R_+}  e^{-y^n  }\mathrm dy \\&=\frac 1m   \int_{\mathbb R_+ } t^{\frac1m -1 }e^{-t } \mathrm dt  \frac1n \int_{\mathbb R_+ } t^{\frac1n -1 }e^{-t } \mathrm dt                                                            
+			\\& =         \frac 1m\Gamma  \left(\frac1m \right)\cdot      \frac 1n\Gamma  \left(\frac1n \right). \end{aligned}      \]
+			下面证明 \[\Gamma\left  (\frac 1n \right )<    n, \ \  \forall n\geq 2,   \]
+			只需要证明
+			\[ x\Gamma \left (x \right )=\Gamma (x+1 )< 1, \    \forall x \in \left (0 ,\frac 12\right ].  \]
+			注意到 \(\Gamma (1)=\Gamma (2) =1      \), 
+			\( \Gamma (x)\)  在 \( (1,2 )\)
+			先递减,   后递增,  \(\Gamma (x)<1 ,\forall x \in (1,2 )\). 所以上式成立.  我们得到了 \(\Gamma\left(\frac 1n \right )<    n,   \forall n\geq 2   \). 于是
+			\[\begin{aligned}I_{m,n}
+			&=\frac {1}{n^2  m}\frac  {\Gamma^2 ( \frac 1n  )\Gamma( \frac {1}{m}-\frac 1n) }{J_{m,n}       }\\& <       
+			\frac {1}{ m}\frac  {\Gamma( \frac {1}{m}-\frac 1n)   }{J_{m,n}  }\\& < 
+			\frac {1}{ m}\cdot \frac {mn }{n-m }   \cdot \frac  { 1 }{J_{m,n} }\\&= \frac { n}{(n-m)  J_{m,n  } }.          \end{aligned} \]         
+		\[\]\[\]
+		
+		
+		
+			<B> Question 2.  </B>	<br> <br>   
+				记
+		\([x]\)      表示不超过 
+		\(x  \) 的最大整数, \( \{x \}=x-[x ]\), \( n\in \mathbb N_+  ,n \geq  2023,    \) 	\[ I_n = \int  
+		_{(0,1)^n}\left\{ \frac 1{  x_1x_2 \cdots x_n } \right\}
+		\mathrm dx_1 \mathrm dx_2  \cdots\mathrm dx_n,      \]
+		\[ \gamma_n=
+		\lim_{N \to \infty } \left( \sum_{k=1}
+		^N \frac{\ln ^n k }{k }-\frac {\ln^n  N  }{ n+1 }  \right),    \]
+		\[  S_n =\sum       
+		_{k=0 }^n \frac {\gamma_k  } {k!}.    \]
+		证明:         当 \(   n-\mathfrak  N=1\) 时,  有               
+		\[ I_n+S_\mathfrak N  \equiv    1
+		. \]      
+		
+		
+			<B> Proof.  </B>	
+		考虑坐标变换
+		\[\left\{\begin{array}{l} y_1= \dfrac{1}{x_1} \\
+		y_2=\hspace{0.06cm} \frac{1}{x_1 x_2} \\\hspace{0.6cm} \vdots \\ y_n = \frac{1}{x_1 x_2 \cdots x_n }\end{array}\right. \]   
+		所以\[
+		I_n =\int_1^{\infty} \int_1^{y_n } \cdots \int_1^{y_2} \frac{\left\{y_n \right\}}{y_1 \cdots y_{n -1} y_n ^2} \mathrm{~d} y_1 \mathrm{ d} y_2 \cdots \mathrm{d} y_n  =\int_1^{\infty} \frac{\{y\} \ln ^{n -1} y}{(n -1) ! y^2} \mathrm{~d} y.  \]  
+		两边同乘  \( n! \)\[    \begin{aligned}      n ! I_n&=
+		\lim _{N  \rightarrow \infty} \sum_{k=1}^n \int_k^{k+1} \frac{n(y-k) \ln ^{n-1} y}{y^2} \mathrm{~d} y 
+		\\&   = \lim _{N  \rightarrow \infty} \sum_{k=1}^N  \left(\left.\frac{(y-k) \ln ^n y}{y}\right|_k ^{k+1}-\int_k^{k+1} \frac{k \ln ^n y}{y^2} \mathrm{~d} y\right) 
+		\\& =\lim _{N  \rightarrow \infty}\left(\sum_{k=1}^N \frac{\ln ^n (k+1)}{k+1}-\sum_{k=1}^N  \int_k^{k+1} \frac{k \ln ^n  y}{y^2} \mathrm{~d} y\right) . 
+		\end{aligned} \]         
+                   
+		于是      
+		\[     
+		\begin{aligned} n  !    &I_{n+1}=\lim _{N  \rightarrow \infty} \sum_{k=1}^N  \int_k^{k+1} \frac{(y-k) \ln ^n  y}{y^2} \mathrm{~d} y \\& =\lim _{N  \rightarrow \infty}\left(\int_1^{N +1} \frac{\ln ^n  y}{y} \mathrm{~d} y-\sum_{k=1}^N  \int_k^{k+1} \frac{k \ln ^n  y}{y^2} \mathrm{~d} y\right) \\
+		&   =\lim _{N  \rightarrow \infty}\left(\frac{\ln ^{n +1}(N +1)}{n  +1}-\sum_{k=1}^N  \int_k^{k+1} \frac{k \ln ^n  y}{y^2} \mathrm{~d} y\right)\end{aligned} 
+		\] 
+		所以   
+		
+		
+		         \[ \begin{aligned}n        !\left(I_n-I_{n+1}\right)& =\lim _{N  \rightarrow \infty}\left(\sum_{k=1}^N  \frac{\ln ^n(k+1)}{k+1}-\frac{\ln ^{n+1}(N +1)}{n+1}\right) \\&  =\lim _{N \rightarrow \infty}\left(\sum_{k=1}^N  \frac{\ln ^n  k}{k}-\frac{\ln ^{n +1} N }{n+1}\right) \\ &=\gamma_n.   \end{aligned}   
+		\]
+		对 \( \gamma_ n /n ! \) 求和, 注意到    \( \gamma_0=\gamma \)  (Euler 常数)  
+		\[      \sum_{k=1}^{n-1}\left(I_k-I_{k+1}\right)=\sum_{k=1}^{n -1} \frac{\gamma_k}{k !}   , \]\[                I_1-I_n=1-\gamma-I_n =\sum_{k=1}^{n -1} \frac{\gamma_k}{k !}. \]所以 \[            I_n +    \sum_{k=0}^{n -1} \frac{\gamma_k}{k !}=1       . \]                    
+		这样一来,	我们证明了当 \(   n-\mathfrak  N=1\) 时,  有               
+		\[ I_n+S_\mathfrak N  \equiv    1
+		. \]      
+		\[\]\[\]
+					<B> Question 3.  </B>	<br> <br>   
+							
+							
+							证明: \(\forall t>0,  \) 
+							
+							\[ \sum_ { n\in \mathbb Z } e^{-\pi t n^2 }=\frac 1 { \sqrt t }\sum_{ n\in \mathbb Z  } e^{-\frac{\pi   n^2  }{t}}.    \]
+							  
+							
+										<B> Proof.  </B>	
+								  考虑 Possion 求和公式, 设 \(f(t)\in \mathcal  S(\mathbb R )\), 有 \[\sum_{n\in \mathbb Z }  f(n)=\sum_{n\in \mathbb Z }  \hat  f(n).   \]考虑 Fourier 变换的不动点, 即 \[f(x)=e^{-\pi x^2 }=\hat f(x).   \]
+							\( 	  \forall t>0\), 设\[ f_t(x)=e^{-\pi t x^2 }, \]
+							运用 Fourier 变换性质, 有 \[\hat f_t(x)=\frac 1{\sqrt t}e^{-\pi \frac {x^2 } {t}}. \] 运用 Possion 求和公式, 		\[ \sum_ { n\in \mathbb Z } e^{-\pi t n^2 }=\frac 1 { \sqrt t }\sum_{ n\in \mathbb Z  } e^{-\frac{\pi   n^2  }{t}}.    \]  
+							
+									\[\]\[\]
+										<B> Question 4.  </B>	<br> <br>   
+												
+														设 \(\varphi :      \mathbb R\to \mathbb R,   \varphi (x)\in C^\infty (\mathbb R )\).  \(\forall x \in \mathbb R,\,   \varphi (x)\geq 0 \), 并且  \( \varphi(x)\)
+												具有紧支集, 同时满足\[
+												\int _\mathbb R  \varphi(x)\hspace{0.05cm}\mathrm dx=1.  \]
+												定义\[\varphi _\theta(x)= \frac {1}{\theta }\varphi\left ( \frac x \theta \right  ).    \] 
+												设 \( v(x )\in L^1(\mathbb R )  \cap  L^2(\mathbb R )  \), 请你证明 \(\forall \theta >0  \)
+												\[ \int_\mathbb R   | \varphi_\theta   *v(x) |^2 \mathrm dx\leq \int _\mathbb R  |v(x )| ^2 \mathrm dx .    \]
+												其中      \[ \varphi_\theta*v   (x)=\int _\mathbb R \varphi_\theta (x-y)  v(y )\mathrm dy.  \]
+												     
+														<B> Proof.  </B>		
+												
+												
+												  	由于 \( \varphi \geq 0 \), 注意到        \(\forall \theta >0  \)  \[ 		\int _\mathbb R  \varphi(x)\hspace{0.05cm}\mathrm dx=   		\int _\mathbb R  \varphi_\theta (x)\hspace{0.05cm}\mathrm dx= 		\int _\mathbb R | \varphi_\theta (x)| \hspace{0.05cm}\mathrm dx= 1.   \]运用 Plancherel 公式, 有\[ \begin{aligned}\int _\mathbb R  |v(x )| ^2 \mathrm dx  & =\|v \|  ^2_{L^2 (\mathbb   R )}\\& =\| \hat v \| _{L^2 ( \mathbb R )  }^2\\&=\int_   \mathbb R|\hat v (x)|^2\left(\int _\mathbb R \left|\frac1\theta  \varphi
+												  \left(    \frac y \theta     \right )      \right|
+												  \cdot \left|  e^{-2\pi i yx }  \right|\mathrm  dy\right) ^2\mathrm dx\\&\geq \int_   \mathbb R|\hat v (x)|^2\left(  \left|\int_\mathbb R \frac1\theta  \varphi
+												  \left(    \frac y \theta     \right )        
+												  \cdot     e^{-2\pi i yx }  \mathrm  dy\right|\right) ^2\mathrm dx    
+												  \\& = \int _\mathbb R |\hat v(x) \hat \varphi_\theta (x)|^2 \mathrm dx \\& =\int _\mathbb R |\widehat{v * \varphi_\theta }   (x)|^2 \mathrm dx\\&=  \int _\mathbb R |\widehat{   \varphi_\theta*v  }   (x)|^2 \mathrm dx  \\&  =   \int _\mathbb R |  {   \varphi_\theta*v  }   (x)|^2 \mathrm dx.      \end{aligned} \]从而完成证明.
+												  
+												  
+												     
+														\[\]\[\]
+															<B> Question 5.  </B>	<br> <br>   
+																	
+																	
+																	
+																	设 \( f(z)\) 是单位圆盘 \(D \) 上的全纯函数, 满足 \( f( z )\neq 0 \) 以及 \( f(z ) \neq 1 \).
+  <BR>
+  	
+  	
+  	
+																	(1) 函数族 
+																	\( \mathscr F \) 由全体不能取到三个(不同的)值     \(a,b,c \in   \mathbb {  \bar C}  \) 的亚纯函数组成. 
+																	证明 \(\mathscr F\) 是 \(D\) 上的正规族. 
+																	
+   <BR>
+																	(2)	 如果 \(| f(0)| < M \), 证明: 存在常数 \(  L>0  \),  	\(   \forall r\in(0,1 )\) 以及    \(|z|<   r\)，     
+																		\[   \arctan (|f(z)|)  <\arctan M+\frac{2 r L}{1-r^2}.       \]  
+																		
+																		    
+																			<B> Proof.  </B>	  	
+																	
+																	
+																(1) 考虑 \( F\in \mathscr F \) 与分式线性变换的复合, 只需考虑不能取到 \(0,1,\infty   \)	三个值的函数.  我们定义单位圆盘上的函数集合 \(  \mathcal F_n \), 其中的函数不能取到 \( 0,\infty,   e^{  2 \pi ik/n  }, ( k=1,2,  \cdots , n )    \). 显然有 \( \mathscr F =\mathcal F_1 \). 如果 \(f\in \mathscr F \), 有 \(\sqrt [n]f\in \mathcal F_n \). 同时, 如果 \( h\in \mathcal F_n \), \(           h^n \in\mathscr F \).   假设 \( \mathscr F \) 
+															不是正规族, 那么对于所有的 \( n\),  \(\mathcal F _n \)
+															也都不是正规族. 	记 \[ E_n:= \{ 0,1  , e^{2\pi i k/n},    k=1,2,\cdots , n-1 \}.  \]对于所有的 \(n\), 我们可以得到非常值整函数 \(g_n \), 在这里对于每个 \( n\),  \(g_n \) 都是一类不能取到 \(E_n \) 中的元素的函数列 \(  \varphi _k     \) 的极限函数.  	根据   Hurwitz 定理, \(g_n\) 也不能取到 \(E_n\) 中的元素.     考虑 Chordal   度量 \[ \chi (z,z^\prime )=\frac {|z-z^\prime  |}{\sqrt{ 1+|z|^2  }\cdot \sqrt  {1+|z^\prime|   ^2 }}.    \]
+															我们还有  \[  \begin{aligned}g_n^\sharp(z) & =\lim_{\epsilon  \to 0 }\frac{\chi( g(z+\epsilon   ,z  )) }{|\epsilon  | }    \\&=\frac{|g^\prime(z)| }{1+|g(z)|  ^2 }\\&\leq g_n^\sharp  (0)\\&=1    \end{aligned}\]考虑函数族\[   \mathfrak G =\{ g_{2^n }\},\]     知\[ g_{2^n }^\sharp (z) \leq 1 ,\ \    \forall 
+															z\in \mathbb C.   \] 根据 Marty 定理,  \(\mathfrak G \)
+															是 \(\mathbb C \) 上的正规族, 所以 \(\mathfrak  G \) 存在一个紧集上 \(\chi \)-一致收敛于极限函数 \(G \) 的子列. 由于对所有的 \( n\),   \( g_{2^n }^\sharp  (0 )\), \( G^\sharp (0)=1,  \) 所以 \(G \) 同样不是常值. 我们定义集合 \[ T_n=S _  {2^n }  =  \{ 0,1  , e^{2\pi i k/2^n },    k=1,2,\cdots , 2^  n-1 \}. \]显然有 \[     T_{n}\subset T_{n+  1  }.   \] 所以当 \(m\geq n\),  \(  g_{2^m }\) 不能取到 \(T_n\) 中的元素,. 根据 Hurwitz  定理,  对于所有的 \( n   \), \(G  \) 取不到
+															\(T_n\) 中的元素.    
+															由于 \(\bigcup\limits _{n=1  }^\infty   T_n \) 在 \(\partial \bar D   \)  稠密, \(G(\mathbb C )\) 是连通开集,  所以有   \[G(\mathbb C)\subset D,   \]
+															或者\[     G(\mathbb C  )  \subset \mathbb C -\bar D.     \]根据 Liouville 定理, 二者都能推出 \(G\) 为常值函数, 引出矛盾.    
+<BR>
+
+
+
+
+
+
+
+															(2)  
+															设 \(\mathscr{G}\) 表示单位圆盘上不能取到 0 和 1 的全体全纯函数构成的函数族, 记 \[ \varphi _a(\zeta ):=
+															\frac{\zeta -a   }{1-\overline a \zeta  }  \] 知 \(\operatorname{Aut} D=\{ \varphi _a ,a\in D  \}\), 
+															\(\varphi _a(0)=-a    \), \(\varphi^\prime _a (0)=1-|a|^2    \).     结合(1)的结论,       \(\mathscr G  \circ 									\operatorname{Aut} D   \) 是正规族. 
+															对于所有 \(f\circ \varphi_a   \in \mathscr G \circ  \operatorname{Aut} (D) \),
+															
+															
+															$$
+															\frac{\left|f^{\prime}\left(\varphi_a(0)\right)\right|}{1+\left|f\left(\varphi_a(0)\right)\right|^2} \leq L .
+															$$
+															其中常数 \( L \) 与  \( f \circ \varphi_a \) 无关. 考虑用 \(z\) 代替  \(-a \), 我们得到   
+															$$
+															\frac{\left|f^{\prime}(z)\right|\left(1-|z|^2\right)}{1+|f(z)|^2} \leq L ,     \ \  \forall z \in D.
+															$$    
+															由于 \(f\) 不能取到 0,   对于任何固定的  \( z\in D_r = \{  z: |z| <  r ,0<   r<1  \}\),      \(  t \rightarrow|f(t z)|\) 在 \((0,1 )\) 连续可导,   
+																$$
+																\frac{\mathrm d}{\mathrm  d t}(\arctan (|f(t z)|)) \leq \frac{2\left|f^{\prime}(t z)\right||z|}{1+|f(t z)|^2} \leq \frac{2 r L}{1-r^2} \text {. }
+																$$   
+																两边积分  $$
+																|\arctan (|f(z)|)-\arctan (|f(0)|)| \leq \int_0^1\left|\frac{d}{d t}(\arctan (|f(t z)|))\right| d t \leq \frac{2 r L}{1-r^2}. 
+																$$
+																所以    
+																$$
+																\arctan (|f(z)|) \leq \arctan (|f(0)|)+\frac{2 r L}{1-r^2}<\arctan M+\frac{2 r L}{1-r^2}. 
+																$$        				\[\]\[\]    
+																				<B> Question 6.  </B><br>     <br>   	设 \(C_S  \) 是 \(  \mathbb R^4 \)
+																				上单位球的 Sobolev 常数, \(B_r \) 表示中心在原点, 半径为 \(r\) 
+																				的四维球. \(u\in W^{1,p   }(B_1  )\cap C^\infty(\mathbb R^4 ),2\leq p\leq \infty    \), \(u\geq 0 \) 并且满足    	\[-\Delta u\leq u^2
+																				.  \] 同时存在 \(\varepsilon>0  \), 使得\[ \|u\|_{L^2(B_1) }\leq \varepsilon.  \]
+																				(1) 证明: \[\| u  \|_{ L^4 (B_\frac 34 )}\leq 24C_S \| u  \|_{ L^2  (B_1)   }.
+																				\]
+																				(2) 记 \( r_k =\frac 12+ \frac 1{2^k    },\, k\in \mathbb N_+        \). 证明: 存在常数  	\( C_k >0 \), 使得
+																				\[\| u  \|_{ L^{2^{k+1}} (B_{r_{k+1} } )}\leq   C_k \| u  \|_{ L^{2^k }  (B_{r_k })   }.
+																				\] 		
+																				                      
+																						
+																									<B> Proof.  </B>
+																									(1)   备注: 考虑证明过程中需要使用 Sobolev 不等式,  Sobolev 共轭   \(  p^*    =np/(n-p)\), 在这里  \(n=4\),  
+																									所以 \(p\) 精确范围是 \(p\in [2,4)  \), 而对于四维球 \(B_1     \),  由于  \(m(B_1)<\infty  \),      
+																									如果   \(          
+																									u\in  W^{1,p} (B_1  )\),   \(4\leq   p\leq \infty   \), 则一定有   \( 
+																									u\in  W^{1,m }(B_1) ,  \)  对  \( m\in  [2,4)      \).            
+																									
+																									
+																									
+																									
+																									选择一个函数 \(\eta (x)\), 满足 \(0\leq \eta \leq 1  \), 对于所有\(  x\in B_{\frac 34 }\),   \(\eta (x)=1  \), 在 \(B_1 \) 内具有紧支集,  并且   \(   |\nabla u  |\leq  8 \).  将 \( -\Delta u\leq u^2   \) 两边乘以   \(\eta^2  u  \), 
+																									分部积分, 得到      
+																									$$
+																									\int_{B_1} \eta^2|\nabla u|^2 \leq 2 \int_{B_1} \eta|\nabla u||\nabla \eta| u+\int_{B_1} \eta^2 u^3
+																									$$
+																									根据 Young 不等式,         得出不等号右边第一项的估计      
+																									$$
+																									\frac{1}{2} \int_{B_1} \eta^2|\nabla u|^2 d x \leq 128 \int_{B_1} u^2+\int_{B_1} \eta^2 u^3 .
+																									$$  
+																									对于最后一项, 利用  H\(\mathrm {   \ddot      {o }}  \)lder   不等式,      假设 \(   B_1\)   上 \(    \|u\|  _{L^2 _{}(B_1 )}\)小于 
+\(\varepsilon
+\),    同时利用  Sobolev 不等式,  我们有      
+																									$$\begin{aligned}
+																									\int_{B_1} \eta^2 u^3 &= \int_     {B_1}  u\cdot  \eta^2 u^2                       
+																									\\& \leq   \|  u\|  _{   L^2  (B_1   )  }   \|\eta ^2  u^2\|_{  L^2  (B_1 )  }
+																									\\&  =      \|  u\|  _{   L^2  (B_1   )  }\|\eta   u\|^2   _{  L^4  (B_1 )  }    
+																									%  
+																									\\
+																									& \leq \varepsilon C_S^2 \int_{B_1} | \nabla(\eta u)^2 |\\
+																									& \leq 2 \varepsilon C_S^2 \int_{B_1} \eta^2|\nabla u|^2+128 \varepsilon C_S^2 \int_{B_1} u^2,
+																									\end{aligned}$$    
+																									其中 $C_S<\infty$ 是 $B_1$  上的局部 Sobolev 常数.      注意到,  如我们选取    \(\varepsilon\)     足够小使得          \(2 \varepsilon C_S^2 \leq \frac{1}{4}\),     
+																									那么       
+																									$$
+																									\frac{1}{4} \int_{B_1} \eta^2|\nabla u|^2 \leq 144 \int_{B_1} u^2
+																									$$
+																									运用 Sobolev 不等式     
+																									\[  \|u\|_{L^4\left(B_{3 / 4}\right)} \leq 24 C_S\|u\|_{L^2\left(B_1\right)} .  \]
+																									(2) 对于 \(k=1 \) 的情形第一问已经证明, 当 \(k \geq 2 \), 设 \(  \alpha_k=2^{k-1} \), 
+																									将 \( -\Delta u\leq u^2   \)两边同时乘以 \(   \eta_k^2 u^{2 \alpha_k-1}  \).  与第一问类似, 截断函数  \(\eta _k \)       	             满足 \(0\leq \eta_k  \leq 1  \), 对于所有 \(  x\in B_{r_{k +1} }\),   \(\eta (x)=1  \), 在 \(B_{   r_k  } \) 内具有紧支集,  并且   \[        \left|\nabla \eta_k\right| \leq\frac    2 {  r_k-r_{k+1}   }     .\]      
+																									分部积分, 得到      
+																									\[  \frac{2 \alpha_k-1}{\alpha_k^2} \int_{B_{r_k}} \eta_k^2\left|\nabla u^{\alpha_k}\right|^2 \leq 2 \int_{B_{r_k}} \eta_k|\nabla u|\left|\nabla \eta_k\right| u^{2 \alpha_k-1}+\int_{B_{r_k}} \eta_k^2 u^{2 \alpha_k+1} .  \]   
+																									根据 Young 不等式处理不等号右边的第一项, 结合上面式子,   可以得出以下估计  
+																									\[       \frac{2 \alpha_k-1}{2 \alpha_k^2} \int_{B_{r_k}} \eta_k^2\left|\nabla u^{\alpha_k}\right|^2 \leq \frac{32 \alpha_k^2}{2 \alpha_k-1} \int_{B_{r_k}} u^{2 \alpha_k}+\int_{B_{r_k}} \eta_k^2 u^{2 \alpha_k+1} .   \]
+																									对于最后一项,  利用  H\(\mathrm {   \ddot      {o }}  \)lder  不等式,  Peter-Paul 不等式,  Sobolev 不等式和第一问证明的结论,  有             
+																									\[\begin{aligned} \int_{B_{r_k}} \eta_k^2 u^{2 \alpha_k+1} & \leq\left(\int_{B_{r_k}} \eta_k^4 u^{4 \alpha_k}\right)^{1 / 4}\left(\int_{B_{r_k}} \eta_k^4 u^4\right)^{1 / 4}\left(\int_{B_{r_k}} u^{2 \alpha_k}\right)^{1 / 2} \\ & \leq \delta_k C_S^2 \int_{B_{r_k}}\left|\nabla\left(\eta_k u^{\alpha_k}\right)\right|^2+\frac{1}{4 \delta_k}\left(\int_{B_{r_k}} \eta_k^4 u^4\right)^{1 / 2} \int_{B_{r_k}} u^{2 \alpha_k} \\ & \leq 2 \delta_k C_S^2 \int_{B_{r_k}} \eta_k^2\left|\nabla u^{\alpha_k}\right|^2+\left(128 \delta_k C_S^2 \alpha_k^2+\frac{1}{4 \delta_k} 24^2 C_S^2 \varepsilon^2\right) \int_{B_{r_k}} u^{2 \alpha_k} . \end{aligned}\]
+																									取 \[    \delta_k= \frac{    2 \alpha_k-1           }
+																									{                   8 \alpha_k^2 C_S^2    } ,         \]从而得到
+																									\[  \frac{2 \alpha_k-1}{4 \alpha_k^2} \int_{B_{r_k}} \eta_k^2\left|\nabla u^{\alpha_k}\right|^2 \leq\left(\frac{32 \alpha_k^2}{2 \alpha_k-1}+16\left(2 \alpha_k-1\right)+\frac{18 \alpha_k^2}{2 \alpha_k-1}\right) \int_{B_{r_k}} u^{2 \alpha_k},   \]
+																									再一次运用 Sobolev 不等式,  
+																									得到存在  \(C_k  \), 使得   
+																									\[  
+																									\|u\|_{L^{2^{k+1}}\left(B_{r_{k+1}}\right)} \leq C_k\|u\|_{L^{2^k}\left(B_{r_k}\right)} . 
+																									\]    
+																									
+																								      
+																						
+																						
+																						
+																						
+		
+		
+		\[\]
+	</H2>   
+        </div>
+    </div>
+
+   
+
+
+
+<p>
+	&nbsp  
+	
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+<p>
+&nbsp  
+
+</p>   
+
+
+
+
+
+
+
+    																							
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																					
+                																																				     
+                																																						
+                																																						
+                																																						
+                																																						
+                																																						
+                																																						
+                																																						
+                																																						
+            
+            
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            </div>    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <p>   	&nbsp    
+        </p>   
+    
+<p>
+&nbsp  
+
+</p>     
+
+<p>
+&nbsp  
+			</p>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	    
+            <div class="row rowpad center">
+                   
+            
+           
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="genericDialog" class="modal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="genericDialogTitle" class="modal-title"></h4>
+                </div>
+                <div id="genericDialogBody" class="modal-body"></div>
+                <div class="modal-footer">
+                      
+                      
+                      
+                      
+                        
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    </div>
+
+  
+
+
+
+
+
+
+
+<audio id="bgm" src="hello.mp3" autoplay loop></audio>
+
+<script>
+
+	var bgm = document.getElementById("bgm");
+
+	bgm.play();
+
+</script> 
+
+
+
+
+
+
+
+</body>
+</html>    

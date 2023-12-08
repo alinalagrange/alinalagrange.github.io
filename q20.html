@@ -13,20 +13,18 @@
 				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 					<meta name="viewport" content="width=device-width, initial-scale=1">
 						
-					
-  <!--<script src="MathJax/es5/tex-chtml.js" id="MathJax-script" ></script>  
+						<!--<script src="MathJax/es5/tex-chtml.js" id="MathJax-script" ></script>  
 -->
 
 
    
  <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
  MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); </script>
- <script type="text/javascript" async src="https://wuli.wiki/MathJax/MathJax.js?config=TeX-MML-AM_CHTML&locale=zh-hans"> </script>     
-     <link rel="stylesheet" href=" questionbox.css">
+ <script type="text/javascript" async src="https://wuli.wiki/MathJax/MathJax.js?config=TeX-MML-AM_CHTML&locale=zh-hans"> </script>     <link rel="stylesheet" href=" questionbox.css">
 						
  
 						<TITLE>   数学(中的)分析学 
-							每周一题___17       </TITLE>               
+							每周一题___20       </TITLE>               
 						<SCRIPT language="JavaScript">        
 						</SCRIPT> 
 						<style>
@@ -35,7 +33,7 @@
 							
 							body {
 							
-	background: #BFAFFF;    
+							background: #BFAFFF;   
 							
 							}
 						</style>  
@@ -43,16 +41,13 @@
 						
 						
 						
-								<script type="text/x-mathjax-config">
+							<script type="text/x-mathjax-config">
 							MathJax.Hub.Config({
 							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
 							});
 							
 							
-						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>						 
-						
-						
-						
+						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>						
 						
 						
 						<style type="text/css">
@@ -93,7 +88,7 @@
 								<TR>
 									<TD width="100%" height="208
 										" bgcolor="#A4A4FF">
-										<H1 style="  font-family:楷体"> &nbsp      <B>            \(\mathrm  {Exercise     \  \oplus  \     Problem      }   \    	17       \)            </B>   &nbsp         
+										<H1 style="  font-family:楷体"> &nbsp      <B>            \(\mathrm  {Exercise     \  \oplus  \     Problem }   \ 20												\     \)            </B>   &nbsp         
 									</H1>        
 								</TD>
 								<TD width="33%" align="right" bgcolor="#A4A4FF"><IMG width="193" 
@@ -122,61 +117,72 @@
 				
 	
 				
-			Prove   that  	$$	   \lim_{\delta \to 0 } \| f*K_\delta -f \| =0  .$$ 
-			where \( K_\delta    \) is a family of good kernels.     	
 				
+				
+				     设 	  \(\left\{K_{\varepsilon}\right\}_{\varepsilon>0}\) 是一类恒同逼近(核)，证明存在常数 \(
+		C >0\) 对于所有可积函数 \(    f\in L(\mathbb R
+		^n   )\)        有
+		$$
+		\sup _{\varepsilon>0}\left|\left(f * K_{\varepsilon}\right)(x)\right| \leq C f^*(x).
+		$$ 
+		在这里 \( f^*   \) 表示极大函数.   		
 				<p>    &nbsp
 				</p>     
 				
-				<p><B>  \(\mathcal{P}roof.  \)         </B></p>     
+				<p><B>  \(\mathcal{P}roof.  \)         </B></p>       
 				
-      
 				
-				<p>    &nbsp
-				</p>  
-   
 				
 				
 				
  
+		    
 
+		
+    
+				  $$\begin{aligned}  
+				  \left|\left(f * K_{\varepsilon}\right)(x)\right|    & =\left|\int_{\mathbb{R}^n} f(x-y) K_{\varepsilon}(y) d y\right|
+		\\   		  &   \leq \int_{\mathbb{R}^n}|f(x-y)|\left|K_{\varepsilon}(y)\right| dy
+			      	  \\ 
+				  &                 \leq \int_{|y| \leq \varepsilon}|f(x-y)|\left|K_{\varepsilon}(y)\right| dy    
+				     +\sum_{k=0}^{\infty} \int_{2^k \varepsilon<|y| \leq 2^{k+1} \varepsilon}
+				  |f(x-y)|\left|K_{\varepsilon}(y)\right| dy  
+				  
+				       \\&
+				  \leq   \frac{A}{\varepsilon^n  } \int_{|y| \leq \varepsilon}|f(x-y)| d y+        \sum_{k=0}^{\infty} \int_{|y| \leq 2^{k+1} \varepsilon} \frac{A \varepsilon}{\left(2^k \varepsilon\right)^{n+1}}|f(x-y)| d y \\
+				  &    = \frac{A}{\varepsilon^n} \int_{|y| \leq \varepsilon}|f(x-y)| d y+\frac{A}{\varepsilon^n  } \sum_{k=0}^{\infty} \frac{1}{2^{k(n +1)}} \int_{|y| \leq 2^{k+1} \varepsilon}|f(x-y)| d y
+\\   &=  \frac{A}{\varepsilon^n  }       I_1  +  \frac{A}{\varepsilon^n  }  I_2  
+				 				  \end{aligned} $$
+          考虑 \(I_1  \)
+				  $$
+				  \int_{|y| \leq \varepsilon}|f(x-y)| d y=\int_B|f| \leq m(B) f^*=  \frac   {\pi ^{\frac  n2 }}{\Gamma (     \frac n2 +1   )}    \cdot \varepsilon ^n f^*
+				  .$$
+				  其中 \(  B\)   是 \(\mathbb  R^n\) 中半径  \(\varepsilon  \) 的球.  考虑  \( I_2   \)
+				  $$
+				  \frac{A}{\varepsilon^n} \sum_{k=0}^{\infty} \frac{1}{2^{k(n+1)}} \int_{|y| \leq 2^{k+1} \varepsilon}|f(x-y)| d y \leq \frac{A}{\varepsilon^n} \sum_{k=0}^{\infty} \frac{1}{2^{k(n+1)}}\cdot         \frac   {\pi ^{\frac  n2 }}{\Gamma (     \frac n2 +1   )}      \cdot\left(2^{k+1} \varepsilon\right)^n f^*
+				  $$
+   所以 
+				  $$\begin{aligned}
+				  
+				 \sup  _{\varepsilon>0    } \left|\left(f * K_{\varepsilon}\right)(x)\right| &\leq    \sup  _{\varepsilon>0 }       \frac{A}{\varepsilon^n  }  (     I_1  +         I_2  )  
+				 )  \\& \leq \left  (
+   A\frac   {\pi ^{\frac  n2 }}{\Gamma (     \frac n2 +1   )}             +A  \frac   {\pi ^{\frac  n2 }}{\Gamma (     \frac n2 +1   )}    
+   \sum_{k=0}^\infty \frac{1}{2^{k-n } }   \right)    f^*   \\&=  A \frac   {\pi ^{\frac  n2 }}{\Gamma (     \frac n2 +1   )}   (2^{n+1 }+1  )    f^*\\&=Cf  ^*              
+				  \end{aligned}
+				  
+				  
+				  $$   
+				   
+				  
+      
 				
-  
-				
-			$$	\begin{aligned} \left\|f * K_{\delta}-f\right\| &=\int_{\mathbb{R}^{n}}\left|f * K_{\delta}(x)-f(x)\right| d x \\ &=\int_{\mathbb{R}^{n}}\left|\int_{\mathbb{R}^{n}} f(x-y) K_{\delta}(y) d y-f(x)\right| d x \\ &=\int_{\mathbb{R}^{n}}\left|\int_{\mathbb{R}^{n}}(f(x-y)-f(x)) K_{\delta}(y) d y\right| d x \\ & \leq \int_{\mathbb{R}^{n}} \int_{\mathbb{R}^{n}}|f(x-y)-f(x)|\left|K_{\delta}(y)\right| d y d x \\ &=\int_{\mathbb{R}^n} \int_{\mathbb{R}^{n}}|f(x-y)-f(x)|\left|K_{\delta}(y)\right| d x d y \\ &=\int_{|y| \leq \ell} \int_{\mathbb{R}^{n}}|f(x-y)-f(x)|\left|K_{\delta}(y)\right| d x d y\\ & \ \ \quad\ \ \quad +\int_{|y|>\ell} \int_{\mathbb{R}^{n}} | f(x-y)-f(x)| \\ &=I_1+I_2. \end{aligned}
-			$$	
-				Then for  \(   I_1\),     
+				<p>    &nbsp
+				</p>  
+				\(\qquad   \qquad   \) 
 				
 				
-				  $$ 
-			    \begin{aligned} I_1&= \int_{|y| \leq \ell}\left|K_{\delta}(y)\right| \int_{\mathbb{R}^{n}}|f(x-y)-f(x)| d x d y \\& = \int_{|y| \leq \ell}\left|K_{\delta}(y)\right| \| f(x-y)-f(x) \| _ 1 d x d y \end{aligned}
-				$$   
-				where  \( \ell > 0\).  By the continuity of the Lebesgue integral
-				
-				i.e.   \( \forall \varepsilon >0 , \exists \zeta >0 ,\)    when \(      |y|<\zeta , \ \|f(x-y)-f(x) \| _1< \varepsilon.\)  
-				
-				Hence
-				$$
-			    \ I_1\leq \varepsilon \int_{|y| \leq \ell}\left|K_{\delta}(y)\right| d y \leq M \varepsilon.
-$$
-				Then for  \( I_2\),  
-$$  				
-			      \begin{aligned} I_2=& \int_{|y|>\ell} \int_{\mathbb{R}^{n}} | f(x-y)-f(x)| |K_\delta | dxdy\\ \leq & 2\|f\| _{L^1(\mathbb R^n )} \int_{|y| > \ell}\left|K_{\delta}(y)\right | \end{aligned}$$
-				
-				By the properties   of the good kernel,  we have 
 				
 				
-			\(\forall \varepsilon >0, \exists \theta >0  \)   s.t. when
-				 \( 
-				\delta <\theta 
-				,   \int_{|y| > \ell}\left|K_{\delta}(y)\right| < \varepsilon.  
-\)   
-				Then we obtain $$\| f*K_\delta -f \| <(M+ 2\| f \| ) \varepsilon.   $$
-				
-				Hence
-				
-			  $$        \lim_{\delta \to 0 } \| f*K_\delta -f \| =0.
-				$$  
 				
 				
 				
