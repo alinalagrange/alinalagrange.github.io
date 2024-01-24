@@ -7,7 +7,8 @@
 
 
 <title>   AlinaLagrange 第五届八一赛供题与解答       </title>
- <link rel="Shortcut Icon" href="my.ico" type="image/x-icon" />		
+<link rel="shortcut icon" href="alina.png  " />
+
 <meta charset="utf-8" />
 <meta http-equiv="Cache-Control" CONTENT="no-cache">
 <meta http-equiv="Pragma" CONTENT="no-cache">
@@ -38,29 +39,34 @@
 <link rel="stylesheet" href="   style.css">
 	
     
-	<script charset="UTF-8" src="abcd.js"></script>
 
       
-          
-          <!--<script src="MathJax/es5/tex-chtml.js" id="MathJax-script" ></script>  
-          -->
+   
           
           
           
-          <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
-          	MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }}); </script>
-          <script type="text/javascript" async src="https://wuli.wiki/MathJax/MathJax.js?config=TeX-MML-AM_CHTML&locale=zh-hans"> </script>
-          
-          
-          		<script type="text/x-mathjax-config">
-							MathJax.Hub.Config({
-							tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
-							});
-							
-							
-						</script><script src="MathJax/es5/tex-chtml.js" id="MathJax-script" async></script>
-          
+  <!--MathJax-->
+   <script>
+      MathJax = {
+         tex: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true,
+            tags: 'ams',
+         },
+      };
+   </script>
+   <script type="text/javascript" async src="https://wuli.wiki/MathJax3/es5/tex-mml-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js" integrity="sha512-T8xxpazDtODy3WOP/c6hvQI2O9UPdARlDWE0CvH1Cfqc0TXZF6GZcEKL7tIR8VbfS/7s/J6C+VOqrD6hIo++vQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>                  
 
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+
+tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+
+});
+
+</script>    
+      
 
 </head>
 <body>
@@ -295,16 +301,9 @@
 															\(T_n\) 中的元素.    
 															由于 \(\bigcup\limits _{n=1  }^\infty   T_n \) 在 \(\partial \bar D   \)  稠密, \(G(\mathbb C )\) 是连通开集,  所以有   \[G(\mathbb C)\subset D,   \]
 															或者\[     G(\mathbb C  )  \subset \mathbb C -\bar D.     \]根据 Liouville 定理, 二者都能推出 \(G\) 为常值函数, 引出矛盾.    
-<BR>
-
-
-
-
-
-
-
+															\newline      
 															(2)  
-															设 \(\mathscr{G}\) 表示单位圆盘上不能取到 0 和 1 的全体全纯函数构成的函数族, 记 \[ \varphi _a(\zeta ):=
+															设 $\mathscr{G}$ 表示单位圆盘上不能取到 0 和 1 的全体全纯函数构成的函数族, 记 \[ \varphi _a(\zeta ):=
 															\frac{\zeta -a   }{1-\overline a \zeta  }  \] 知 \(\operatorname{Aut} D=\{ \varphi _a ,a\in D  \}\), 
 															\(\varphi _a(0)=-a    \), \(\varphi^\prime _a (0)=1-|a|^2    \).     结合(1)的结论,       \(\mathscr G  \circ 									\operatorname{Aut} D   \) 是正规族. 
 															对于所有 \(f\circ \varphi_a   \in \mathscr G \circ  \operatorname{Aut} (D) \),
@@ -317,7 +316,7 @@
 															$$
 															\frac{\left|f^{\prime}(z)\right|\left(1-|z|^2\right)}{1+|f(z)|^2} \leq L ,     \ \  \forall z \in D.
 															$$    
-															由于 \(f\) 不能取到 0,   对于任何固定的  \( z\in D_r = \{  z: |z| <  r ,0<   r<1  \}\),      \(  t \rightarrow|f(t z)|\) 在 \((0,1 )\) 连续可导,   
+															由于 \(f\) 不能取到 0,   对于任何固定的  \( z\in D_r = \{  z: |z| <  r ,0<   r<1  \}\),      $t \rightarrow|f(t z)|$ 在 \((0,1 )\) 连续可导,   
 																$$
 																\frac{\mathrm d}{\mathrm  d t}(\arctan (|f(t z)|)) \leq \frac{2\left|f^{\prime}(t z)\right||z|}{1+|f(t z)|^2} \leq \frac{2 r L}{1-r^2} \text {. }
 																$$   
@@ -358,9 +357,7 @@
 																									$$
 																									\frac{1}{2} \int_{B_1} \eta^2|\nabla u|^2 d x \leq 128 \int_{B_1} u^2+\int_{B_1} \eta^2 u^3 .
 																									$$  
-																									对于最后一项, 利用  H\(\mathrm {   \ddot      {o }}  \)lder   不等式,      假设 \(   B_1\)   上 \(    \|u\|  _{L^2 _{}(B_1 )}\)小于 
-\(\varepsilon
-\),    同时利用  Sobolev 不等式,  我们有      
+																									对于最后一项, 利用  H\(\mathrm {   \ddot      {o }}  \)lder   不等式,      假设 \(   B_1\)   上 \(    \|u\|  _{L^2 _{}(B_1 )}\)小于 $\varepsilon$,    同时利用  Sobolev 不等式,  我们有      
 																									$$\begin{aligned}
 																									\int_{B_1} \eta^2 u^3 &= \int_     {B_1}  u\cdot  \eta^2 u^2                       
 																									\\& \leq   \|  u\|  _{   L^2  (B_1   )  }   \|\eta ^2  u^2\|_{  L^2  (B_1 )  }
@@ -370,7 +367,7 @@
 																									& \leq \varepsilon C_S^2 \int_{B_1} | \nabla(\eta u)^2 |\\
 																									& \leq 2 \varepsilon C_S^2 \int_{B_1} \eta^2|\nabla u|^2+128 \varepsilon C_S^2 \int_{B_1} u^2,
 																									\end{aligned}$$    
-																									其中 $C_S<\infty$ 是 $B_1$  上的局部 Sobolev 常数.      注意到,  如我们选取    \(\varepsilon\)     足够小使得          \(2 \varepsilon C_S^2 \leq \frac{1}{4}\),     
+																									其中 $C_S<\infty$ 是 $B_1$  上的局部 Sobolev 常数.      注意到,  如我们选取    $\varepsilon$     足够小使得          $2 \varepsilon C_S^2 \leq \frac{1}{4}$,     
 																									那么       
 																									$$
 																									\frac{1}{4} \int_{B_1} \eta^2|\nabla u|^2 \leq 144 \int_{B_1} u^2
@@ -589,19 +586,9 @@
 
 
 
-
-<audio id="bgm" src="hello.mp3" autoplay loop></audio>
-
-<script>
-
-	var bgm = document.getElementById("bgm");
-
-	bgm.play();
-
-</script> 
-
-
-
+<audio autoplay>
+	<source src="hello.mp3">
+	</audio> 
 
 
 
